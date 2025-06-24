@@ -35,8 +35,8 @@ const HomePage = () => {
       id: 4,
       title: "GENERAL LIABILITY",
       subtitle: "Business Protection That Works",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
-      icon: <Shield className="w-16 h-16" />,
+      image: "https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+      icon: <Shield className="w-12 h-12" />,
       description: "Comprehensive coverage for contractors and businesses"
     }
   ];
@@ -71,27 +71,27 @@ const HomePage = () => {
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{ backgroundImage: `url(${slide.image})` }}
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-[#355E3B]/90 via-[#355E3B]/70 to-[#355E3B]/50"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#002F4B]/90 via-[#002F4B]/70 to-[#002F4B]/50"></div>
             </div>
             
             <div className="relative z-10 h-full flex items-center justify-center">
               <div className="container mx-auto px-8 text-center">
                 <div className="max-w-4xl mx-auto">
                   <div className="mb-8">
-                    <div className="inline-flex items-center justify-center w-24 h-24 bg-[#FDF6E3]/20 backdrop-blur-sm rounded-full border-4 border-[#FDF6E3]/40 mb-6 hover:scale-110 transition-transform duration-500">
-                      {React.cloneElement(slide.icon, { className: "w-12 h-12 text-[#FDF6E3]" })}
+                    <div className="inline-flex items-center justify-center w-24 h-24 bg-[#B8860B]/30 backdrop-blur-sm rounded-full border-4 border-[#B8860B]/60 mb-6 hover:scale-110 transition-transform duration-500 shadow-lg shadow-[#B8860B]/20">
+                      {React.cloneElement(slide.icon, { className: "w-12 h-12 text-[#B8860B]" })}
                     </div>
                   </div>
                   
-                  <h1 className="text-6xl md:text-7xl lg:text-8xl font-black text-[#FDF6E3] mb-6 tracking-tight leading-none">
+                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#FDF6E3] mb-6 tracking-tight leading-none">
                     {slide.title}
                   </h1>
                   
-                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#FDF6E3]/90 mb-8 tracking-wide">
+                  <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#FDF6E3]/90 mb-8 tracking-wide">
                     {slide.subtitle}
                   </h2>
                   
-                  <p className="text-xl md:text-2xl text-[#FDF6E3]/80 font-medium tracking-wide">
+                  <p className="text-lg md:text-xl text-[#FDF6E3]/80 font-medium tracking-wide">
                     {slide.description}
                   </p>
                 </div>
@@ -103,14 +103,14 @@ const HomePage = () => {
         {/* Navigation Arrows */}
         <button
           onClick={prevSlide}
-          className="absolute left-8 top-1/2 transform -translate-y-1/2 z-20 p-4 rounded-full bg-[#FDF6E3]/20 backdrop-blur-sm border-2 border-[#FDF6E3]/40 hover:bg-[#FDF6E3] hover:text-[#355E3B] text-[#FDF6E3] transition-all duration-300 hover:scale-110"
+          className="absolute left-8 top-1/2 transform -translate-y-1/2 z-20 p-4 rounded-full bg-[#B8860B]/30 backdrop-blur-sm border-2 border-[#B8860B]/60 hover:bg-[#B8860B] hover:text-[#002F4B] text-[#B8860B] transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-[#B8860B]/30"
         >
           <ChevronLeft className="w-8 h-8" />
         </button>
         
         <button
           onClick={nextSlide}
-          className="absolute right-8 top-1/2 transform -translate-y-1/2 z-20 p-4 rounded-full bg-[#FDF6E3]/20 backdrop-blur-sm border-2 border-[#FDF6E3]/40 hover:bg-[#FDF6E3] hover:text-[#355E3B] text-[#FDF6E3] transition-all duration-300 hover:scale-110"
+          className="absolute right-8 top-1/2 transform -translate-y-1/2 z-20 p-4 rounded-full bg-[#B8860B]/30 backdrop-blur-sm border-2 border-[#B8860B]/60 hover:bg-[#B8860B] hover:text-[#002F4B] text-[#B8860B] transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-[#B8860B]/30"
         >
           <ChevronRight className="w-8 h-8" />
         </button>
@@ -123,8 +123,8 @@ const HomePage = () => {
               onClick={() => setCurrentSlide(index)}
               className={`w-4 h-4 rounded-full transition-all duration-300 ${
                 index === currentSlide 
-                  ? 'bg-[#FDF6E3] scale-125' 
-                  : 'bg-[#FDF6E3]/50 hover:bg-[#FDF6E3]/75'
+                  ? 'bg-[#B8860B] scale-125 shadow-lg shadow-[#B8860B]/40' 
+                  : 'bg-[#B8860B]/50 hover:bg-[#B8860B]/75'
               }`}
             />
           ))}
@@ -135,8 +135,8 @@ const HomePage = () => {
       <section className="py-20 relative overflow-hidden">
         {/* Decorative background elements */}
         <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-20 left-20 w-96 h-96 bg-[#355E3B] rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-20 w-80 h-80 bg-[#355E3B] rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-20 w-96 h-96 bg-[#B8860B] rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-80 h-80 bg-[#002F4B] rounded-full blur-3xl"></div>
         </div>
 
         <div className="container mx-auto px-8 relative z-10">
@@ -144,74 +144,74 @@ const HomePage = () => {
             
             {/* Header */}
             <div className="text-center mb-16">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-[#355E3B] to-[#355E3B]/80 rounded-full mb-8 shadow-2xl">
-                <Shield className="w-10 h-10 text-[#FDF6E3]" />
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-[#B8860B] to-[#B8860B]/80 rounded-full mb-8 shadow-2xl">
+                <Shield className="w-10 h-10 text-[#002F4B]" />
               </div>
               
-              <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-[#355E3B] mb-8 tracking-tight leading-none">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#002F4B] mb-8 tracking-tight leading-none">
                 TAILORED INSURANCE SOLUTIONS
               </h2>
               
               <div className="flex items-center justify-center space-x-3 mb-8">
-                <MapPin className="w-8 h-8 text-[#355E3B]" />
-                <h3 className="text-3xl md:text-4xl font-bold text-[#355E3B]/90 tracking-wide">
+                <MapPin className="w-6 h-6 text-[#002F4B]" />
+                <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#002F4B]/90 tracking-wide">
                   IN RIVERSIDE, CA
                 </h3>
               </div>
               
-              <div className="h-2 w-32 bg-gradient-to-r from-[#355E3B] to-[#355E3B]/60 rounded-full mx-auto"></div>
+              <div className="h-2 w-32 bg-gradient-to-r from-[#B8860B] to-[#B8860B]/60 rounded-full mx-auto"></div>
             </div>
 
             {/* Main Content */}
-            <div className="bg-gradient-to-br from-[#355E3B]/5 to-[#355E3B]/10 backdrop-blur-sm rounded-3xl p-12 border-4 border-[#355E3B]/20 hover:border-[#355E3B]/40 transition-all duration-500 hover:shadow-2xl">
-              <p className="text-xl md:text-2xl lg:text-3xl leading-relaxed text-[#355E3B] font-medium text-center mb-12">
-                Insurance isn't just paperwork, <span className="font-black text-[#355E3B]">it's your defense against the unexpected</span>. 
+            <div className="bg-gradient-to-br from-[#B8860B]/10 to-[#002F4B]/10 backdrop-blur-sm rounded-3xl p-12 border-4 border-[#B8860B]/30 hover:border-[#B8860B]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#B8860B]/20">
+              <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-[#002F4B] font-medium text-center mb-12">
+                Insurance isn't just paperwork, <span className="font-black text-[#002F4B]">it's your defense against the unexpected</span>. 
                 Whether you're a trucker running loads on the 60, a homeowner facing flood risk near the Santa Ana River, 
                 or a contractor navigating strict city permit laws, 
-                <span className="font-black text-[#355E3B]"> Golden Vista Agency offers complete Insurance solutions in Riverside, CA</span>, 
+                <span className="font-black text-[#002F4B]"> Golden Vista Agency offers complete Insurance solutions in Riverside, CA</span>, 
                 crafting coverage that fits the streets you live and work on.
               </p>
               
-              <p className="text-xl md:text-2xl lg:text-3xl leading-relaxed text-[#355E3B] font-medium text-center mb-12">
+              <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-[#002F4B] font-medium text-center mb-12">
                 We protect your livelihood, commercial fleets, family homes, leased units, and even life itself, 
-                against <span className="font-black text-[#355E3B]">real threats, not just theoretical ones</span>. 
-                With <span className="font-black text-[#355E3B]">14+ years rooted in Riverside</span>, 
+                against <span className="font-black text-[#002F4B]">real threats, not just theoretical ones</span>. 
+                With <span className="font-black text-[#002F4B]">14+ years rooted in Riverside</span>, 
                 we know where claims fall through and how to close those gaps, delivering policies built for impact, not appearances.
               </p>
 
               {/* Stats Section */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
                 <div className="text-center group">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-[#355E3B] rounded-full mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Award className="w-8 h-8 text-[#FDF6E3]" />
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    <Award className="w-8 h-8 text-[#002F4B]" />
                   </div>
-                  <h4 className="text-4xl font-black text-[#355E3B] mb-2">14+</h4>
-                  <p className="text-xl font-bold text-[#355E3B]/80">Years of Experience</p>
+                  <h4 className="text-3xl font-black text-[#002F4B] mb-2">14+</h4>
+                  <p className="text-lg font-bold text-[#002F4B]/80">Years of Experience</p>
                 </div>
                 
                 <div className="text-center group">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-[#355E3B] rounded-full mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Users className="w-8 h-8 text-[#FDF6E3]" />
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    <Users className="w-8 h-8 text-[#002F4B]" />
                   </div>
-                  <h4 className="text-4xl font-black text-[#355E3B] mb-2">1000+</h4>
-                  <p className="text-xl font-bold text-[#355E3B]/80">Satisfied Clients</p>
+                  <h4 className="text-3xl font-black text-[#002F4B] mb-2">1000+</h4>
+                  <p className="text-lg font-bold text-[#002F4B]/80">Satisfied Clients</p>
                 </div>
                 
                 <div className="text-center group">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-[#355E3B] rounded-full mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Clock className="w-8 h-8 text-[#FDF6E3]" />
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    <Clock className="w-8 h-8 text-[#002F4B]" />
                   </div>
-                  <h4 className="text-4xl font-black text-[#355E3B] mb-2">24/7</h4>
-                  <p className="text-xl font-bold text-[#355E3B]/80">Support Available</p>
+                  <h4 className="text-3xl font-black text-[#002F4B] mb-2">24/7</h4>
+                  <p className="text-lg font-bold text-[#002F4B]/80">Support Available</p>
                 </div>
               </div>
             </div>
 
             {/* CTA Section */}
             <div className="text-center mt-16">
-              <button className="group relative px-12 py-6 bg-gradient-to-r from-[#355E3B] to-[#355E3B]/90 text-[#FDF6E3] font-black text-2xl tracking-wide rounded-2xl hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 border-4 border-[#355E3B] hover:border-[#355E3B]/80">
+              <button className="group relative px-12 py-6 bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 text-[#002F4B] font-black text-xl tracking-wide rounded-2xl hover:shadow-2xl hover:shadow-[#B8860B]/30 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 border-4 border-[#B8860B] hover:border-[#B8860B]/80">
                 <span className="relative z-10">GET YOUR QUOTE TODAY</span>
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#355E3B]/80 to-[#355E3B] scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#B8860B]/80 to-[#B8860B] scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
               </button>
             </div>
           </div>
