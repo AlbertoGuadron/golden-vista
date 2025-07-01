@@ -116,12 +116,13 @@ const HomePage = () => {
         </button>
 
         {/* Slide Indicators */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex space-x-4">
+        {/* Slide Indicators */}
+        <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20 flex space-x-1 sm:space-x-3">
           {slides.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
-              className={`w-4 h-4 rounded-full transition-all duration-300 ${
+              className={`w-2.5 h-2.5 sm:w-4 sm:h-4 rounded-full transition-all duration-300 ${
                 index === currentSlide 
                   ? 'bg-[#B8860B] scale-125 shadow-lg shadow-[#B8860B]/40' 
                   : 'bg-[#B8860B]/50 hover:bg-[#B8860B]/75'

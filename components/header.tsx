@@ -14,6 +14,7 @@ const Header: React.FC = () => {
       <header className="sticky top-0 z-50 w-full bg-gradient-to-r from-[#002F4B] via-[#002F4B]/95 to-[#002F4B]/90 shadow-2xl backdrop-blur-md border-b-4 border-[#B8860B]/30">
         <link rel="icon" href="/favicon.ico" />
         <div className="container mx-auto flex items-center justify-between py-8 px-8">
+         
          {/* Logo Section */}
           <div className="flex items-center gap-4">
             <div className="relative group">
@@ -22,23 +23,24 @@ const Header: React.FC = () => {
                 <Image
                   src="/galeria/logo.png"
                   alt="Golden Vista Insurance Agency"
-                  width={60}
-                  height={60}
+                  width={50}
+                  height={50}
                   className="relative rounded-full shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-110 ring-4 ring-[#B8860B]/30 hover:ring-[#B8860B]/50"
                 />
               </Link>
             </div>
 
-            <div className="hidden sm:block">
-              <h1 className="text-[#FDF6E3] font-black text-3xl tracking-tight bg-gradient-to-r from-[#FDF6E3] to-[#B8860B] bg-clip-text text-transparent drop-shadow-lg">
+            <div className="text-center mt-1">
+              <h1 className="text-[#FDF6E3] font-black text-2xl tracking-tight bg-gradient-to-r from-[#FDF6E3] to-[#B8860B] bg-clip-text text-transparent drop-shadow-lg">
                 Golden Vista Insurance Agency
               </h1>
-              <p className="text-[#FDF6E3]/70 font-medium text-sm italic tracking-wide">
-                “Secure Today, Shine Tomorrow”
+              <p className="text-[#FDF6E3]/70 font-medium text-xs italic tracking-wide">
+                "Secure Today, Shine Tomorrow"
               </p>
-              <div className="h-1 w-16 bg-gradient-to-r from-[#B8860B] to-[#B8860B]/50 rounded-full mt-1 mb-1"></div>
+              <div className="h-1 w-12 bg-gradient-to-r from-[#B8860B] to-[#B8860B]/50 rounded-full mx-auto mt-1"></div>
             </div>
           </div>
+            
          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-3">
             <Link
