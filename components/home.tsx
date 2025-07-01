@@ -103,28 +103,27 @@ const HomePage = () => {
         {/* Navigation Arrows */}
         <button
           onClick={prevSlide}
-          className="absolute left-8 top-1/2 transform -translate-y-1/2 z-20 p-4 rounded-full bg-[#B8860B]/30 backdrop-blur-sm border-2 border-[#B8860B]/60 hover:bg-[#B8860B] hover:text-[#002F4B] text-[#B8860B] transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-[#B8860B]/30"
+          className="absolute left-4 sm:left-8 top-1/2 transform -translate-y-1/2 z-20 p-2 sm:p-4 rounded-full bg-[#B8860B]/30 backdrop-blur-sm border-2 border-[#B8860B]/60 hover:bg-[#B8860B] hover:text-[#002F4B] text-[#B8860B] transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-[#B8860B]/30"
         >
-          <ChevronLeft className="w-8 h-8" />
+          <ChevronLeft className="w-5 h-5 sm:w-8 sm:h-8" />
         </button>
         
         <button
           onClick={nextSlide}
-          className="absolute right-8 top-1/2 transform -translate-y-1/2 z-20 p-4 rounded-full bg-[#B8860B]/30 backdrop-blur-sm border-2 border-[#B8860B]/60 hover:bg-[#B8860B] hover:text-[#002F4B] text-[#B8860B] transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-[#B8860B]/30"
+          className="absolute right-4 sm:right-8 top-1/2 transform -translate-y-1/2 z-20 p-2 sm:p4 rounded-full bg-[#B8860B]/30 backdrop-blur-sm border-2 border-[#B8860B]/60 hover:bg-[#B8860B] hover:text-[#002F4B] text-[#B8860B] transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-[#B8860B]/30"
         >
-          <ChevronRight className="w-8 h-8" />
+          <ChevronRight className="w-5 h-5 sm:w-8 sm:h8" />
         </button>
 
-        {/* Slide Indicators */}
         {/* Slide Indicators */}
         <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20 flex space-x-1 sm:space-x-3">
           {slides.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
-              className={`w-2.5 h-2.5 sm:w-4 sm:h-4 rounded-full transition-all duration-300 ${
+              className={`w-2 h-2 sm:w-4 sm:h-4 rounded-full transition-all duration-300 ${
                 index === currentSlide 
-                  ? 'bg-[#B8860B] scale-125 shadow-lg shadow-[#B8860B]/40' 
+                  ? 'bg-[#B8860B] scale-110 sm:scale-125 shadow-lg shadow-[#B8860B]/40' 
                   : 'bg-[#B8860B]/50 hover:bg-[#B8860B]/75'
               }`}
             />
