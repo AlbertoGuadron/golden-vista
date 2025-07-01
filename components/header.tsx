@@ -125,7 +125,7 @@ const Header: React.FC = () => {
                 <span className="tracking-wider group-hover:tracking-widest transition-all duration-300 relative z-10">ABOUT US</span>
               </Link>
                <Link
-                href="/serices"
+                href="/services"
                 className="flex items-center text-[#002F4B] font-black text-2xl py-6 px-6 rounded-2xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 hover:from-[#B8860B] hover:to-[#B8860B]/90 hover:text-[#FDF6E3] transition-all duration-500 ease-in-out transform hover:translate-x-4 hover:scale-105 border-l-8 border-[#B8860B]/30 hover:border-[#B8860B] hover:shadow-2xl group shadow-lg hover:shadow-[#B8860B]/20"
                 onClick={() => setMobileMenuOpen(false)}
               >
