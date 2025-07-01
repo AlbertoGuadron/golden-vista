@@ -21,7 +21,7 @@ const Header: React.FC = () => {
               <div className="absolute -inset-2 bg-gradient-to-r from-[#B8860B] to-[#B8860B]/80 rounded-full blur opacity-40 group-hover:opacity-60 transition duration-500"></div>
               <Link href="/">
                 <Image
-                  src="/public/galeria/logo.png"
+                  src="/galeria/logo.png"
                   alt="Golden Vista Insurance Agency"
                   width={50}
                   height={50}
