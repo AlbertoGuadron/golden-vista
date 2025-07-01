@@ -14,46 +14,58 @@ const Header: React.FC = () => {
       <header className="sticky top-0 z-50 w-full bg-gradient-to-r from-[#002F4B] via-[#002F4B]/95 to-[#002F4B]/90 shadow-2xl backdrop-blur-md border-b-4 border-[#B8860B]/30">
         <link rel="icon" href="/favicon.ico" />
         <div className="container mx-auto flex items-center justify-between py-8 px-8">
-          {/* Logo Section */}
+         {/* Logo Section */}
           <div className="flex items-center gap-4">
             <div className="relative group">
               <div className="absolute -inset-2 bg-gradient-to-r from-[#B8860B] to-[#B8860B]/80 rounded-full blur opacity-40 group-hover:opacity-60 transition duration-500"></div>
               <Link href="/">
-              <Image
-                src="/galeria/logo.png"
-                alt="Golden Vista Insurance Agency"
-                width={60}
-                height={60}
-                className="relative rounded-full shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-110 ring-4 ring-[#B8860B]/30 hover:ring-[#B8860B]/50"
-              />
+                <Image
+                  src="/galeria/logo.png"
+                  alt="Golden Vista Insurance Agency"
+                  width={60}
+                  height={60}
+                  className="relative rounded-full shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:scale-110 ring-4 ring-[#B8860B]/30 hover:ring-[#B8860B]/50"
+                />
               </Link>
             </div>
+
             <div className="hidden sm:block">
               <h1 className="text-[#FDF6E3] font-black text-3xl tracking-tight bg-gradient-to-r from-[#FDF6E3] to-[#B8860B] bg-clip-text text-transparent drop-shadow-lg">
                 Golden Vista Insurance Agency
               </h1>
-              <div className="h-1 w-16 bg-gradient-to-r from-[#B8860B] to-[#B8860B]/50 rounded-full mt-1"></div>
+              <p className="text-[#FDF6E3]/70 font-medium text-sm italic tracking-wide">
+                “Secure Today, Shine Tomorrow”
+              </p>
+              <div className="h-1 w-16 bg-gradient-to-r from-[#B8860B] to-[#B8860B]/50 rounded-full mt-1 mb-1"></div>
             </div>
           </div>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-4">
+         {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center gap-3">
             <Link
               href="/"
-              className="relative text-[#FDF6E3] font-bold text-xl px-8 py-4 rounded-2xl bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 hover:from-[#B8860B]/90 hover:to-[#B8860B] transition-all duration-500 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:-translate-y-1 group border-2 border-[#B8860B]/50 hover:border-[#B8860B] shadow-lg hover:shadow-[#B8860B]/30"
+              className="relative text-[#FDF6E3] font-bold text-base px-5 py-2 rounded-xl bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 hover:from-[#B8860B]/90 hover:to-[#B8860B] transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 group border-2 border-[#B8860B]/50 hover:border-[#B8860B] shadow-md hover:shadow-[#B8860B]/30"
             >
               <span className="relative z-10 tracking-wide text-[#002F4B] font-black">HOME</span>
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
+              <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
             </Link>
 
             <Link
-              href="#about"
-              className="relative text-[#FDF6E3] font-bold text-xl px-8 py-4 rounded-2xl bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 hover:from-[#B8860B]/90 hover:to-[#B8860B] transition-all duration-500 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:-translate-y-1 group border-2 border-[#B8860B]/50 hover:border-[#B8860B] shadow-lg hover:shadow-[#B8860B]/30"
+              href="/aboutus"
+              className="relative text-[#FDF6E3] font-bold text-base px-5 py-2 rounded-xl bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 hover:from-[#B8860B]/90 hover:to-[#B8860B] transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 group border-2 border-[#B8860B]/50 hover:border-[#B8860B] shadow-md hover:shadow-[#B8860B]/30"
             >
               <span className="relative z-10 tracking-wide text-[#002F4B] font-black">ABOUT US</span>
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
+              <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
+            </Link>
+
+            <Link
+              href="/services"
+              className="relative text-[#FDF6E3] font-bold text-base px-5 py-2 rounded-xl bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 hover:from-[#B8860B]/90 hover:to-[#B8860B] transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 group border-2 border-[#B8860B]/50 hover:border-[#B8860B] shadow-md hover:shadow-[#B8860B]/30"
+            >
+              <span className="relative z-10 tracking-wide text-[#002F4B] font-black">OUR SERVICES</span>
+              <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
             </Link>
           </nav>
+
 
           {/* Mobile Menu Button */}
           <button 
@@ -104,11 +116,18 @@ const Header: React.FC = () => {
                 <span className="tracking-wider group-hover:tracking-widest transition-all duration-300 relative z-10">HOME</span>
               </Link>
               <Link
-                href="#about"
+                href="/aboutus"
                 className="flex items-center text-[#002F4B] font-black text-2xl py-6 px-6 rounded-2xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 hover:from-[#B8860B] hover:to-[#B8860B]/90 hover:text-[#FDF6E3] transition-all duration-500 ease-in-out transform hover:translate-x-4 hover:scale-105 border-l-8 border-[#B8860B]/30 hover:border-[#B8860B] hover:shadow-2xl group shadow-lg hover:shadow-[#B8860B]/20"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="tracking-wider group-hover:tracking-widest transition-all duration-300 relative z-10">ABOUT US</span>
+              </Link>
+               <Link
+                href="/serices"
+                className="flex items-center text-[#002F4B] font-black text-2xl py-6 px-6 rounded-2xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 hover:from-[#B8860B] hover:to-[#B8860B]/90 hover:text-[#FDF6E3] transition-all duration-500 ease-in-out transform hover:translate-x-4 hover:scale-105 border-l-8 border-[#B8860B]/30 hover:border-[#B8860B] hover:shadow-2xl group shadow-lg hover:shadow-[#B8860B]/20"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <span className="tracking-wider group-hover:tracking-widest transition-all duration-300 relative z-10">OUR SERVICES</span>
               </Link>
             </nav>
 
