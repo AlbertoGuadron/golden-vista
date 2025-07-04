@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FaFacebook, FaInstagram, FaMapMarkerAlt, FaCertificate } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaMapMarkerAlt, FaCertificate, FaYelp } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -42,7 +42,7 @@ export default function Footer() {
               <div className="space-y-3">
                 <div className="flex items-center justify-center space-x-3 text-lg">
                   <FaMapMarkerAlt className="text-[#B8860B] text-xl" />
-                  <span className="font-bold">1160 Hamner Ave STE B, Norco, CA 92860</span>
+                  <span className="font-bold">1160 Hamner Ave STE B, CA 92860</span>
                 </div>
               </div>
             </div>
@@ -57,6 +57,11 @@ export default function Footer() {
               <Link href="#" className="group">
                 <div className="p-4 rounded-2xl bg-[#B8860B]/10 hover:bg-[#B8860B] transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:-translate-y-1 border-2 border-[#B8860B]/20 hover:border-[#B8860B]">
                   <FaInstagram className="text-2xl text-[#FDF6E3] group-hover:text-[#002F4B] transition-colors duration-300" />
+                </div>
+              </Link>
+              <Link href="https://www.yelp.com/biz/golden-vista-insurance-agency-riverside-2" className="group">
+                <div className="p-4 rounded-2xl bg-[#B8860B]/10 hover:bg-[#B8860B] transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:-translate-y-1 border-2 border-[#B8860B]/20 hover:border-[#B8860B]">
+                  <FaYelp className="text-2xl text-[#FDF6E3] group-hover:text-[#002F4B] transition-colors duration-300" />
                 </div>
               </Link>
             </div>

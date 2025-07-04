@@ -155,7 +155,7 @@ const HomePage = () => {
               <div className="flex items-center justify-center space-x-3 mb-8">
                 <MapPin className="w-6 h-6 text-[#002F4B]" />
                 <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#002F4B]/90 tracking-wide">
-                  IN RIVERSIDE, CA
+                  IN CALIFORNIA
                 </h3>
               </div>
               
