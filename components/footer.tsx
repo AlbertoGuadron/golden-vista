@@ -59,7 +59,7 @@ export default function Footer() {
                   <FaInstagram className="text-2xl text-[#FDF6E3] group-hover:text-[#002F4B] transition-colors duration-300" />
                 </div>
               </Link>
-              <Link href="https://www.yelp.com/biz/golden-vista-insurance-agency-riverside-2" className="group">
+              <Link href="https://www.yelp.com/biz/golden-vista-insurance-agency-riverside-2" className="group" target="blank">
                 <div className="p-4 rounded-2xl bg-[#B8860B]/10 hover:bg-[#B8860B] transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:-translate-y-1 border-2 border-[#B8860B]/20 hover:border-[#B8860B]">
                   <FaYelp className="text-2xl text-[#FDF6E3] group-hover:text-[#002F4B] transition-colors duration-300" />
                 </div>

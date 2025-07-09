@@ -73,6 +73,13 @@ const Header: React.FC = () => {
               <span className="relative z-10 tracking-wide text-[#002F4B] font-black">PET INSURANCE</span>
               <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
             </Link>
+            <Link
+              href="/contactus"
+              className="relative text-[#FDF6E3] font-bold text-base px-5 py-2 rounded-xl bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 hover:from-[#B8860B]/90 hover:to-[#B8860B] transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 group border-2 border-[#B8860B]/50 hover:border-[#B8860B] shadow-md hover:shadow-[#B8860B]/30"
+            >
+              <span className="relative z-10 tracking-wide text-[#002F4B] font-black">CONTACT US</span>
+              <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
+            </Link>
           </nav>
 
 
@@ -144,6 +151,13 @@ const Header: React.FC = () => {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="tracking-wider group-hover:tracking-widest transition-all duration-300 relative z-10">PET INSURANCE</span>
+              </Link>
+              <Link
+                href="/contactus"
+                className="flex items-center text-[#002F4B] font-black text-2xl py-6 px-6 rounded-2xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 hover:from-[#B8860B] hover:to-[#B8860B]/90 hover:text-[#FDF6E3] transition-all duration-500 ease-in-out transform hover:translate-x-4 hover:scale-105 border-l-8 border-[#B8860B]/30 hover:border-[#B8860B] hover:shadow-2xl group shadow-lg hover:shadow-[#B8860B]/20"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <span className="tracking-wider group-hover:tracking-widest transition-all duration-300 relative z-10">CONTACT US</span>
               </Link>
             </nav>
 
