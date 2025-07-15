@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Shield, Truck, House, Car, Users, Award, Clock, MapPin } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Shield, Truck, Home, Car, Users, Award, Clock, MapPin } from 'lucide-react';
 
 const HomePage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -20,7 +20,7 @@ const HomePage = () => {
       title: "HOME INSURANCE",
       subtitle: "Safeguarding Your Family's Foundation",
       image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
-      icon: <House className="w-16 h-16" />,
+      icon: <Home className="w-16 h-16" />,
       description: "Your sanctuary deserves comprehensive protection"
     },
     {
@@ -103,16 +103,16 @@ const HomePage = () => {
         {/* Navigation Arrows */}
         <button
           onClick={prevSlide}
-          className="absolute left-4 sm:left-8 top-1/2 transform -translate-y-1/2 z-20 p-2 sm:p-4 rounded-full bg-[#B8860B]/30 backdrop-blur-sm border-2 border-[#B8860B]/60 hover:bg-[#B8860B] hover:text-[#002F4B] text-[#B8860B] transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-[#B8860B]/30"
+          className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 z-20 p-2 rounded-lg bg-transparent hover:bg-[#FDF6E3]/20 text-[#FDF6E3] transition-all duration-300 hover:scale-105"
         >
-          <ChevronLeft className="w-5 h-5 sm:w-8 sm:h-8" />
+          <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
         </button>
         
         <button
           onClick={nextSlide}
-          className="absolute right-4 sm:right-8 top-1/2 transform -translate-y-1/2 z-20 p-2 sm:p4 rounded-full bg-[#B8860B]/30 backdrop-blur-sm border-2 border-[#B8860B]/60 hover:bg-[#B8860B] hover:text-[#002F4B] text-[#B8860B] transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-[#B8860B]/30"
+          className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 z-20 p-2 rounded-lg bg-transparent hover:bg-[#FDF6E3]/20 text-[#FDF6E3] transition-all duration-300 hover:scale-105"
         >
-          <ChevronRight className="w-5 h-5 sm:w-8 sm:h8" />
+          <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
         </button>
 
         {/* Slide Indicators */}
@@ -168,14 +168,14 @@ const HomePage = () => {
                 Insurance isn't just paperwork, <span className="font-black text-[#002F4B]">it's your defense against the unexpected</span>. 
                 Whether you're a trucker running loads on the 60, a homeowner facing flood risk near the Santa Ana River, 
                 or a contractor navigating strict city permit laws, 
-                <span className="font-black text-[#002F4B]"> Golden Vista Agency offers complete Insurance solutions in Riverside, CA</span>, 
+                <span className="font-black text-[#002F4B]"> Golden Vista Agency offers complete Insurance solutions in CA</span>, 
                 crafting coverage that fits the streets you live and work on.
               </p>
               
               <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-[#002F4B] font-medium text-center mb-12">
                 We protect your livelihood, commercial fleets, family homes, leased units, and even life itself, 
                 against <span className="font-black text-[#002F4B]">real threats, not just theoretical ones</span>. 
-                With <span className="font-black text-[#002F4B]">14+ years rooted in Riverside</span>, 
+                With <span className="font-black text-[#002F4B]">14+ years rooted in CA</span>, 
                 we know where claims fall through and how to close those gaps, delivering policies built for impact, not appearances.
               </p>
 

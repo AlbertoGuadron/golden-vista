@@ -29,10 +29,10 @@ export default function AboutUs() {
             <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
               <span className="bg-gradient-to-r from-[#FDF6E3] to-[#B8860B] bg-clip-text text-transparent">Protecting</span>
               <br />
-              <span className="text-[#FDF6E3]">Riverside Homes</span>
+              <span className="text-[#FDF6E3]">California Homes</span>
             </h1>
             <p className="text-xl text-[#FDF6E3]/80 max-w-3xl mx-auto leading-relaxed">
-              Local expertise meets premium protection. We understand Riverside's unique challenges and deliver insurance solutions that actually work.
+              Local expertise meets premium protection. We understand California's unique challenges and deliver insurance solutions that actually work.
             </p>
           </div>
         </div>
@@ -55,7 +55,7 @@ export default function AboutUs() {
                   </div>
                   <div className="bg-[#B8860B] h-1 w-24 rounded-full mb-6"></div>
                   <p className="text-[#FDF6E3]/90 text-lg leading-relaxed mb-6">
-                    <span className="font-bold text-[#B8860B]">Riverside homeowners face real risks</span> - wildfires in dry months, flash floods during storms, and rising rebuild costs that can wipe out savings. Basic policies don't cut it here.
+                    <span className="font-bold text-[#B8860B]">California homeowners face real risks</span> - wildfires in dry months, flash floods during storms, and rising rebuild costs that can wipe out savings. Basic policies don't cut it here.
                   </p>
                 </div>
               </div>
@@ -87,7 +87,7 @@ export default function AboutUs() {
           
           <div className="bg-[#B8860B]/10 backdrop-blur-sm rounded-3xl p-12 border-2 border-[#B8860B]/20 hover:border-[#B8860B]/40 transition-all duration-500 hover:shadow-2xl">
             <p className="text-xl text-[#FDF6E3]/90 leading-relaxed mb-8">
-              Our <span className="font-bold text-[#B8860B]">premium home insurance services in Riverside CA</span> is built for local issues like older electrical systems near Woodcrest, slope runoff in Canyon Crest, and rental risks near UCR.
+              Our <span className="font-bold text-[#B8860B]">premium home insurance services in CA</span> is built for local issues like older electrical systems near Woodcrest, slope runoff in Canyon Crest, and rental risks near UCR.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -141,7 +141,7 @@ export default function AboutUs() {
               </p>
               
               <div className="bg-[#B8860B]/20 rounded-2xl p-6 border border-[#B8860B]/30">
-                <p className="text-2xl font-black text-[#B8860B] mb-2">Because in Riverside,</p>
+                <p className="text-2xl font-black text-[#B8860B] mb-2">Because in California,</p>
                 <p className="text-2xl font-black text-[#FDF6E3]">guessing wrong can cost everything.</p>
               </div>
             </div>
@@ -154,7 +154,7 @@ export default function AboutUs() {
         <div className="container mx-auto px-8 text-center">
           <h2 className="text-4xl font-black text-[#FDF6E3] mb-8">Ready to Protect Your Home?</h2>
           <p className="text-xl text-[#FDF6E3]/80 mb-12 max-w-2xl mx-auto">
-            Get a personalized quote that addresses Riverside's unique risks and your specific needs.
+            Get a personalized quote that addresses California's unique risks and your specific needs.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
