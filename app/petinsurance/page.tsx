@@ -5,8 +5,30 @@ import { Shield, Zap, MessageCircle, Heart, Clock, Phone, Play, Star, Award, Cli
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
+// Interfaces para los tipos
+interface FloatingEmojiProps {
+  emoji: string;
+  delay?: number;
+}
+
+interface TestimonialCardProps {
+  name: string;
+  pet: string;
+  image: string;
+  testimonial: string;
+  rating: number;
+}
+
+interface Testimonial {
+  name: string;
+  pet: string;
+  image: string;
+  testimonial: string;
+  rating: number;
+}
+
 // Floating animation component
-const FloatingEmoji = ({ emoji, delay = 0 }) => {
+const FloatingEmoji: React.FC<FloatingEmojiProps> = ({ emoji, delay = 0 }) => {
   return (
     <div 
       className="absolute animate-bounce text-4xl opacity-30 hover:opacity-70 transition-opacity duration-300"
@@ -21,7 +43,7 @@ const FloatingEmoji = ({ emoji, delay = 0 }) => {
 };
 
 // Testimonial component
-const TestimonialCard = ({ name, pet, image, testimonial, rating }) => {
+const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, pet, image, testimonial, rating }) => {
   return (
     <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 border-2 border-[#B8860B]/20 hover:border-[#B8860B]/40 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-2 h-full">
       <div className="flex items-center mb-6">
@@ -45,10 +67,10 @@ const TestimonialCard = ({ name, pet, image, testimonial, rating }) => {
   );
 };
 
-export default function PetInsurancePage() {
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+const PetInsurancePage: React.FC = () => {
+  const [currentTestimonial, setCurrentTestimonial] = useState<number>(0);
 
-  const testimonials = [
+  const testimonials: Testimonial[] = [
     {
       name: "Sarah Johnson",
       pet: "Buddy 🐕",
@@ -72,6 +94,17 @@ export default function PetInsurancePage() {
     }
   ];
 
+  const petImages: string[] = [
+    "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1574293876203-46d27e60e6c8?w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1552053831-71594a27632d?w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1561948955-570b270e7c36?w=300&h=300&fit=crop"
+  ];
+
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
@@ -79,10 +112,14 @@ export default function PetInsurancePage() {
     return () => clearInterval(timer);
   }, [testimonials.length]);
 
+  const handleTestimonialChange = (index: number): void => {
+    setCurrentTestimonial(index);
+  };
+
   return (
     <div className="bg-gradient-to-br from-[#FDF6E3] via-[#FDF6E3]/98 to-[#FDF6E3]/95 min-h-screen overflow-hidden">
       
-      < Header/>
+      <Header/>
       {/* Hero Section with Floating Elements */}
       <section className="relative overflow-hidden py-20 bg-gradient-to-br from-[#002F4B] via-[#002F4B]/95 to-[#001B2E]">
         {/* Floating pet emojis */}
@@ -117,7 +154,10 @@ export default function PetInsurancePage() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button className="bg-gradient-to-r from-[#B8860B] to-[#B8860B]/80 hover:from-[#B8860B]/90 hover:to-[#B8860B] text-[#002F4B] font-black py-4 px-8 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+                <button 
+                  type="button"
+                  className="bg-gradient-to-r from-[#B8860B] to-[#B8860B]/80 hover:from-[#B8860B]/90 hover:to-[#B8860B] text-[#002F4B] font-black py-4 px-8 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
+                >
                   🎯 Get Free Quote
                 </button>
               </div>
@@ -234,16 +274,7 @@ export default function PetInsurancePage() {
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=300&h=300&fit=crop",
-              "https://images.unsplash.com/photo-1574293876203-46d27e60e6c8?w=300&h=300&fit=crop",
-              "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=300&h=300&fit=crop",
-              "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=300&h=300&fit=crop",
-              "https://images.unsplash.com/photo-1552053831-71594a27632d?w=300&h=300&fit=crop",
-              "https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?w=300&h=300&fit=crop",
-              "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=300&h=300&fit=crop",
-              "https://images.unsplash.com/photo-1561948955-570b270e7c36?w=300&h=300&fit=crop"
-            ].map((src, index) => (
+            {petImages.map((src, index) => (
               <div key={index} className="relative group overflow-hidden rounded-2xl">
                 <img 
                   src={src}
@@ -287,7 +318,8 @@ export default function PetInsurancePage() {
               {testimonials.map((_, index) => (
                 <button
                   key={index}
-                  onClick={() => setCurrentTestimonial(index)}
+                  type="button"
+                  onClick={() => handleTestimonialChange(index)}
                   className={`w-4 h-4 rounded-full transition-all duration-300 ${
                     index === currentTestimonial 
                       ? 'bg-[#002F4B] scale-125' 
@@ -371,11 +403,17 @@ export default function PetInsurancePage() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="bg-gradient-to-r from-[#B8860B] to-[#B8860B]/80 hover:from-[#B8860B]/90 hover:to-[#B8860B] text-[#002F4B] font-black py-4 px-8 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl animate-pulse hover:animate-none">
+            <button 
+              type="button"
+              className="bg-gradient-to-r from-[#B8860B] to-[#B8860B]/80 hover:from-[#B8860B]/90 hover:to-[#B8860B] text-[#002F4B] font-black py-4 px-8 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl animate-pulse hover:animate-none"
+            >
               🎯 Get Free Quote Now!
             </button>
             
-            <button className="bg-transparent hover:bg-[#B8860B]/10 text-[#FDF6E3] font-bold py-4 px-8 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 border-2 border-[#B8860B]/50 hover:border-[#B8860B]">
+            <button 
+              type="button"
+              className="bg-transparent hover:bg-[#B8860B]/10 text-[#FDF6E3] font-bold py-4 px-8 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 border-2 border-[#B8860B]/50 hover:border-[#B8860B]"
+            >
               📞 Call the Pet Experts!
             </button>
           </div>
@@ -385,7 +423,9 @@ export default function PetInsurancePage() {
           </div>
         </div>
       </section>
-      < Footer/>
+      <Footer/>
     </div>
   );
-}
+};
+
+export default PetInsurancePage;
