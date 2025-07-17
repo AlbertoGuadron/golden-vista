@@ -4,6 +4,7 @@ import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai"
+import { FaQuoteLeft } from "react-icons/fa"
 import React from "react"
 
 const Header: React.FC = () => {
@@ -43,6 +44,19 @@ const Header: React.FC = () => {
             
          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-3">
+            {/* Get Quote Button - Special Design */}
+           <Link
+              href="/contactus"
+              className="relative group px-6 py-3 rounded-2xl bg-gradient-to-r from-[#002F4B] to-[#B8860B] hover:from-[#B8860B] hover:to-[#002F4B] transition-all duration-500 ease-in-out transform hover:scale-110 hover:shadow-2xl hover:-translate-y-2 border-4 border-[#B8860B]/60 hover:border-[#B8860B] shadow-xl hover:shadow-[#B8860B]/40 animate-pulse hover:animate-none"
+            >
+              <span className="relative z-10 tracking-wide text-[#FDF6E3] font-black text-lg flex items-center gap-2">
+                <FaQuoteLeft className="text-[#FDF6E3] text-lg" />
+                GET A QUOTE
+              </span>
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#FDF6E3]/20 to-[#FDF6E3]/10 scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
+            </Link>
+
+            {/* Regular Navigation Buttons */}
             <Link
               href="/"
               className="relative text-[#FDF6E3] font-bold text-base px-5 py-2 rounded-xl bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 hover:from-[#B8860B]/90 hover:to-[#B8860B] transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 group border-2 border-[#B8860B]/50 hover:border-[#B8860B] shadow-md hover:shadow-[#B8860B]/30"
@@ -66,6 +80,7 @@ const Header: React.FC = () => {
               <span className="relative z-10 tracking-wide text-[#002F4B] font-black">SERVICES</span>
               <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
             </Link>
+
             <Link
               href="/petinsurance"
               className="relative text-[#FDF6E3] font-bold text-base px-5 py-2 rounded-xl bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 hover:from-[#B8860B]/90 hover:to-[#B8860B] transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 group border-2 border-[#B8860B]/50 hover:border-[#B8860B] shadow-md hover:shadow-[#B8860B]/30"
@@ -73,6 +88,7 @@ const Header: React.FC = () => {
               <span className="relative z-10 tracking-wide text-[#002F4B] font-black">PET INSURANCE</span>
               <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
             </Link>
+
             <Link
               href="/contactus"
               className="relative text-[#FDF6E3] font-bold text-base px-5 py-2 rounded-xl bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 hover:from-[#B8860B]/90 hover:to-[#B8860B] transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 group border-2 border-[#B8860B]/50 hover:border-[#B8860B] shadow-md hover:shadow-[#B8860B]/30"
@@ -81,7 +97,6 @@ const Header: React.FC = () => {
               <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
             </Link>
           </nav>
-
 
           {/* Mobile Menu Button */}
           <button 
@@ -124,13 +139,28 @@ const Header: React.FC = () => {
         
             {/* Mobile Navigation */}
             <nav className="flex flex-col p-8 gap-4">
+              {/* Get Quote Button - First in Mobile, Special Design */}
               <Link
-                href="/"
+                href="/quote"
+                className="group relative flex items-center justify-center text-[#FDF6E3] font-black text-2xl py-8 px-6 rounded-3xl bg-gradient-to-r from-[#002F4B] to-[#B8860B] hover:from-[#B8860B] hover:to-[#002F4B] transition-all duration-500 ease-in-out transform hover:scale-105 border-4 border-[#B8860B]/60 hover:border-[#B8860B] hover:shadow-2xl shadow-xl hover:shadow-[#B8860B]/40 animate-pulse hover:animate-none"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <span className="tracking-wider group-hover:tracking-widest transition-all duration-300 relative z-10 flex items-center gap-3">
+                  <FaQuoteLeft className="text-[#FDF6E3] text-2xl" />
+                  GET A QUOTE
+                </span>
+                <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[#FDF6E3]/20 to-[#FDF6E3]/10 scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
+              </Link>
+
+              {/* Regular Navigation Items */}
+              <Link
+                href="/contactus"
                 className="flex items-center text-[#002F4B] font-black text-2xl py-6 px-6 rounded-2xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 hover:from-[#B8860B] hover:to-[#B8860B]/90 hover:text-[#FDF6E3] transition-all duration-500 ease-in-out transform hover:translate-x-4 hover:scale-105 border-l-8 border-[#B8860B]/30 hover:border-[#B8860B] hover:shadow-2xl group shadow-lg hover:shadow-[#B8860B]/20"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="tracking-wider group-hover:tracking-widest transition-all duration-300 relative z-10">HOME</span>
               </Link>
+
               <Link
                 href="/aboutus"
                 className="flex items-center text-[#002F4B] font-black text-2xl py-6 px-6 rounded-2xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 hover:from-[#B8860B] hover:to-[#B8860B]/90 hover:text-[#FDF6E3] transition-all duration-500 ease-in-out transform hover:translate-x-4 hover:scale-105 border-l-8 border-[#B8860B]/30 hover:border-[#B8860B] hover:shadow-2xl group shadow-lg hover:shadow-[#B8860B]/20"
@@ -138,13 +168,15 @@ const Header: React.FC = () => {
               >
                 <span className="tracking-wider group-hover:tracking-widest transition-all duration-300 relative z-10">ABOUT US</span>
               </Link>
-               <Link
+
+              <Link
                 href="/services"
                 className="flex items-center text-[#002F4B] font-black text-2xl py-6 px-6 rounded-2xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 hover:from-[#B8860B] hover:to-[#B8860B]/90 hover:text-[#FDF6E3] transition-all duration-500 ease-in-out transform hover:translate-x-4 hover:scale-105 border-l-8 border-[#B8860B]/30 hover:border-[#B8860B] hover:shadow-2xl group shadow-lg hover:shadow-[#B8860B]/20"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="tracking-wider group-hover:tracking-widest transition-all duration-300 relative z-10">SERVICES</span>
               </Link>
+
               <Link
                 href="/petinsurance"
                 className="flex items-center text-[#002F4B] font-black text-2xl py-6 px-6 rounded-2xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 hover:from-[#B8860B] hover:to-[#B8860B]/90 hover:text-[#FDF6E3] transition-all duration-500 ease-in-out transform hover:translate-x-4 hover:scale-105 border-l-8 border-[#B8860B]/30 hover:border-[#B8860B] hover:shadow-2xl group shadow-lg hover:shadow-[#B8860B]/20"
@@ -152,6 +184,7 @@ const Header: React.FC = () => {
               >
                 <span className="tracking-wider group-hover:tracking-widest transition-all duration-300 relative z-10">PET INSURANCE</span>
               </Link>
+
               <Link
                 href="/contactus"
                 className="flex items-center text-[#002F4B] font-black text-2xl py-6 px-6 rounded-2xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 hover:from-[#B8860B] hover:to-[#B8860B]/90 hover:text-[#FDF6E3] transition-all duration-500 ease-in-out transform hover:translate-x-4 hover:scale-105 border-l-8 border-[#B8860B]/30 hover:border-[#B8860B] hover:shadow-2xl group shadow-lg hover:shadow-[#B8860B]/20"

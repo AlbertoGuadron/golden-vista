@@ -36,7 +36,7 @@ export async function POST(request: NextRequest) {
     // Solo el email para ti (Golden Vista)
     const adminEmail = {
       from: process.env.EMAIL_USER,
-      to: 'albertoguadron@gmail.com', // 🔥 CAMBIA ESTE EMAIL POR EL TUYO
+      to: 'albertoguadron@gmail.com, marketing@goldenvistains.com', // 🔥 CAMBIA ESTE EMAIL POR EL TUYO
       subject: `🔥 New Inquiry from ${firstName} ${lastName} - ${insuranceType}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #FDF6E3;">

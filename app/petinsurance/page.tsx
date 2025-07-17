@@ -96,7 +96,7 @@ const PetInsurancePage: React.FC = () => {
 
   const petImages: string[] = [
     "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=300&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1574293876203-46d27e60e6c8?w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
     "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=300&h=300&fit=crop",
     "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=300&h=300&fit=crop",
     "https://images.unsplash.com/photo-1552053831-71594a27632d?w=300&h=300&fit=crop",
