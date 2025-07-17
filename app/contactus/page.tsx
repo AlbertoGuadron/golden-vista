@@ -156,7 +156,7 @@ export default function ContactUsPage() {
                 <h2 className="text-4xl font-black text-[#002F4B] mb-6">Let's Connect</h2>
                 <div className="h-1 w-32 bg-gradient-to-r from-[#B8860B] to-[#B8860B]/50 rounded-full mx-auto lg:mx-0 mb-6"></div>
                 <p className="text-lg text-[#002F4B]/70">
-                  With over 14 years of experience serving Riverside and beyond, we're here to answer your questions and provide personalized insurance solutions.
+                  With over 14 years of experience serving California and beyond, we're here to answer your questions and provide personalized insurance solutions.
                 </p>
               </div>
 
@@ -187,7 +187,7 @@ export default function ContactUsPage() {
                       </div>
                       <div>
                         <h3 className="text-xl font-black text-[#002F4B] mb-2">Email Us</h3>
-                        <p className="text-[#002F4B]/70 text-lg font-bold">info@goldenvistainsurance.com</p>
+                        <p className="text-[#002F4B]/70 text-lg font-bold">marketing@goldenvistains.com</p>
                         <p className="text-[#002F4B]/60">We'll respond within 24 hours</p>
                       </div>
                     </div>
