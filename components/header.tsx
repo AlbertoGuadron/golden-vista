@@ -111,94 +111,94 @@ const Header: React.FC = () => {
       {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
         <div className="fixed inset-0 bg-gradient-to-br from-[#002F4B]/80 via-[#002F4B]/70 to-[#002F4B]/90 z-50 md:hidden backdrop-blur-lg">
-          <div className="fixed right-0 top-0 h-full w-[90%] max-w-sm bg-gradient-to-b from-[#FDF6E3] via-[#FDF6E3]/98 to-[#FDF6E3]/95 shadow-2xl border-l-4 border-[#B8860B]/40">
+          <div className="fixed right-0 top-0 h-full w-[90%] max-w-sm bg-gradient-to-b from-[#FDF6E3] via-[#FDF6E3]/98 to-[#FDF6E3]/95 shadow-2xl border-l-4 border-[#B8860B]/40 overflow-y-auto">
             {/* Mobile Menu Header */}
-            <div className="flex justify-between items-center p-8 border-b-2 border-[#B8860B]/30 bg-gradient-to-r from-[#FDF6E3] to-[#FDF6E3]/90">
-              <div className="flex items-center gap-4">
+            <div className="flex justify-between items-center p-6 border-b-2 border-[#B8860B]/30 bg-gradient-to-r from-[#FDF6E3] to-[#FDF6E3]/90">
+              <div className="flex items-center gap-3">
                 <div className="relative group">
                   <div className="absolute -inset-1 bg-gradient-to-r from-[#B8860B] to-[#B8860B]/60 rounded-full blur opacity-40"></div>
                   <Image
                     src="/galeria/logo.png?height=40&width=40"
                     alt="Golden Vista Insurance Agency Logo"
-                    width={45}
-                    height={45}
+                    width={40}
+                    height={40}
                     className="relative rounded-full ring-2 ring-[#B8860B]/40"
                   />
                 </div>
-                <span className="text-2xl font-black text-[#002F4B] tracking-tight bg-gradient-to-r from-[#002F4B] to-[#B8860B] bg-clip-text text-transparent">
+                <span className="text-xl font-black text-[#002F4B] tracking-tight bg-gradient-to-r from-[#002F4B] to-[#B8860B] bg-clip-text text-transparent">
                   MENU
                 </span>
               </div>
               <button 
-                className="p-3 rounded-2xl bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 hover:from-[#B8860B]/90 hover:to-[#B8860B] transition-all duration-300 transform hover:scale-110 hover:rotate-90 border-2 border-[#B8860B]/30 hover:border-[#B8860B] shadow-lg" 
+                className="p-2 rounded-xl bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 hover:from-[#B8860B]/90 hover:to-[#B8860B] transition-all duration-300 transform hover:scale-110 hover:rotate-90 border-2 border-[#B8860B]/30 hover:border-[#B8860B] shadow-lg" 
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <AiOutlineClose size={26} className="text-[#002F4B]" />
+                <AiOutlineClose size={22} className="text-[#002F4B]" />
               </button>
             </div>
         
             {/* Mobile Navigation */}
-            <nav className="flex flex-col p-8 gap-4">
+            <nav className="flex flex-col p-6 gap-3">
               {/* Get Quote Button - First in Mobile, Special Design */}
               <Link
-                href="/quote"
-                className="group relative flex items-center justify-center text-[#FDF6E3] font-black text-2xl py-8 px-6 rounded-3xl bg-gradient-to-r from-[#002F4B] to-[#B8860B] hover:from-[#B8860B] hover:to-[#002F4B] transition-all duration-500 ease-in-out transform hover:scale-105 border-4 border-[#B8860B]/60 hover:border-[#B8860B] hover:shadow-2xl shadow-xl hover:shadow-[#B8860B]/40 animate-pulse hover:animate-none"
+                href="/contactus"
+                className="group relative flex items-center justify-center text-[#FDF6E3] font-black text-lg py-4 px-4 rounded-2xl bg-gradient-to-r from-[#002F4B] to-[#B8860B] hover:from-[#B8860B] hover:to-[#002F4B] transition-all duration-500 ease-in-out transform hover:scale-105 border-3 border-[#B8860B]/60 hover:border-[#B8860B] hover:shadow-xl shadow-lg hover:shadow-[#B8860B]/40 animate-pulse hover:animate-none"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <span className="tracking-wider group-hover:tracking-widest transition-all duration-300 relative z-10 flex items-center gap-3">
-                  <FaQuoteLeft className="text-[#FDF6E3] text-2xl" />
+                <span className="tracking-wider group-hover:tracking-widest transition-all duration-300 relative z-10 flex items-center gap-2">
+                  <FaQuoteLeft className="text-[#FDF6E3] text-lg" />
                   GET A QUOTE
                 </span>
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[#FDF6E3]/20 to-[#FDF6E3]/10 scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#FDF6E3]/20 to-[#FDF6E3]/10 scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
               </Link>
 
-              {/* Regular Navigation Items */}
+              {/* Regular Navigation Items - Made Smaller */}
               <Link
-                href="/contactus"
-                className="flex items-center text-[#002F4B] font-black text-2xl py-6 px-6 rounded-2xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 hover:from-[#B8860B] hover:to-[#B8860B]/90 hover:text-[#FDF6E3] transition-all duration-500 ease-in-out transform hover:translate-x-4 hover:scale-105 border-l-8 border-[#B8860B]/30 hover:border-[#B8860B] hover:shadow-2xl group shadow-lg hover:shadow-[#B8860B]/20"
+                href="/"
+                className="flex items-center text-[#002F4B] font-black text-lg py-3 px-4 rounded-xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 hover:from-[#B8860B] hover:to-[#B8860B]/90 hover:text-[#FDF6E3] transition-all duration-500 ease-in-out transform hover:translate-x-2 hover:scale-105 border-l-4 border-[#B8860B]/30 hover:border-[#B8860B] hover:shadow-xl group shadow-md hover:shadow-[#B8860B]/20"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <span className="tracking-wider group-hover:tracking-widest transition-all duration-300 relative z-10">HOME</span>
+                <span className="tracking-wide group-hover:tracking-wider transition-all duration-300 relative z-10">HOME</span>
               </Link>
 
               <Link
                 href="/aboutus"
-                className="flex items-center text-[#002F4B] font-black text-2xl py-6 px-6 rounded-2xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 hover:from-[#B8860B] hover:to-[#B8860B]/90 hover:text-[#FDF6E3] transition-all duration-500 ease-in-out transform hover:translate-x-4 hover:scale-105 border-l-8 border-[#B8860B]/30 hover:border-[#B8860B] hover:shadow-2xl group shadow-lg hover:shadow-[#B8860B]/20"
+                className="flex items-center text-[#002F4B] font-black text-lg py-3 px-4 rounded-xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 hover:from-[#B8860B] hover:to-[#B8860B]/90 hover:text-[#FDF6E3] transition-all duration-500 ease-in-out transform hover:translate-x-2 hover:scale-105 border-l-4 border-[#B8860B]/30 hover:border-[#B8860B] hover:shadow-xl group shadow-md hover:shadow-[#B8860B]/20"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <span className="tracking-wider group-hover:tracking-widest transition-all duration-300 relative z-10">ABOUT US</span>
+                <span className="tracking-wide group-hover:tracking-wider transition-all duration-300 relative z-10">ABOUT US</span>
               </Link>
 
               <Link
                 href="/services"
-                className="flex items-center text-[#002F4B] font-black text-2xl py-6 px-6 rounded-2xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 hover:from-[#B8860B] hover:to-[#B8860B]/90 hover:text-[#FDF6E3] transition-all duration-500 ease-in-out transform hover:translate-x-4 hover:scale-105 border-l-8 border-[#B8860B]/30 hover:border-[#B8860B] hover:shadow-2xl group shadow-lg hover:shadow-[#B8860B]/20"
+                className="flex items-center text-[#002F4B] font-black text-lg py-3 px-4 rounded-xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 hover:from-[#B8860B] hover:to-[#B8860B]/90 hover:text-[#FDF6E3] transition-all duration-500 ease-in-out transform hover:translate-x-2 hover:scale-105 border-l-4 border-[#B8860B]/30 hover:border-[#B8860B] hover:shadow-xl group shadow-md hover:shadow-[#B8860B]/20"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <span className="tracking-wider group-hover:tracking-widest transition-all duration-300 relative z-10">SERVICES</span>
+                <span className="tracking-wide group-hover:tracking-wider transition-all duration-300 relative z-10">SERVICES</span>
               </Link>
 
               <Link
                 href="/petinsurance"
-                className="flex items-center text-[#002F4B] font-black text-2xl py-6 px-6 rounded-2xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 hover:from-[#B8860B] hover:to-[#B8860B]/90 hover:text-[#FDF6E3] transition-all duration-500 ease-in-out transform hover:translate-x-4 hover:scale-105 border-l-8 border-[#B8860B]/30 hover:border-[#B8860B] hover:shadow-2xl group shadow-lg hover:shadow-[#B8860B]/20"
+                className="flex items-center text-[#002F4B] font-black text-lg py-3 px-4 rounded-xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 hover:from-[#B8860B] hover:to-[#B8860B]/90 hover:text-[#FDF6E3] transition-all duration-500 ease-in-out transform hover:translate-x-2 hover:scale-105 border-l-4 border-[#B8860B]/30 hover:border-[#B8860B] hover:shadow-xl group shadow-md hover:shadow-[#B8860B]/20"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <span className="tracking-wider group-hover:tracking-widest transition-all duration-300 relative z-10">PET INSURANCE</span>
+                <span className="tracking-wide group-hover:tracking-wider transition-all duration-300 relative z-10">PET INSURANCE</span>
               </Link>
 
               <Link
                 href="/contactus"
-                className="flex items-center text-[#002F4B] font-black text-2xl py-6 px-6 rounded-2xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 hover:from-[#B8860B] hover:to-[#B8860B]/90 hover:text-[#FDF6E3] transition-all duration-500 ease-in-out transform hover:translate-x-4 hover:scale-105 border-l-8 border-[#B8860B]/30 hover:border-[#B8860B] hover:shadow-2xl group shadow-lg hover:shadow-[#B8860B]/20"
+                className="flex items-center text-[#002F4B] font-black text-lg py-3 px-4 rounded-xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 hover:from-[#B8860B] hover:to-[#B8860B]/90 hover:text-[#FDF6E3] transition-all duration-500 ease-in-out transform hover:translate-x-2 hover:scale-105 border-l-4 border-[#B8860B]/30 hover:border-[#B8860B] hover:shadow-xl group shadow-md hover:shadow-[#B8860B]/20"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <span className="tracking-wider group-hover:tracking-widest transition-all duration-300 relative z-10">CONTACT US</span>
+                <span className="tracking-wide group-hover:tracking-wider transition-all duration-300 relative z-10">CONTACT US</span>
               </Link>
             </nav>
 
-            {/* Mobile Menu Footer */}
-            <div className="absolute bottom-8 left-8 right-8">
-              <div className="text-center text-[#002F4B]/70 text-lg font-bold tracking-wide border-t-2 border-[#B8860B]/30 pt-6">
-                © Copyright 2025 By Golden Vista Insurance Agency. All Rights Reserved
-                <div className="h-1 w-20 bg-gradient-to-r from-[#B8860B] to-[#B8860B]/50 rounded-full mx-auto mt-2"></div>
+            {/* Mobile Menu Footer - Adjusted positioning */}
+            <div className="absolute bottom-6 left-6 right-6">
+              <div className="text-center text-[#002F4B]/70 text-sm font-bold tracking-wide border-t-2 border-[#B8860B]/30 pt-4">
+                © 2025 Golden Vista Insurance Agency. All Rights Reserved
+                <div className="h-1 w-16 bg-gradient-to-r from-[#B8860B] to-[#B8860B]/50 rounded-full mx-auto mt-2"></div>
               </div>
             </div>
           </div>
