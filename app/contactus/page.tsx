@@ -150,86 +150,7 @@ export default function ContactUsPage() {
         <div className="container mx-auto px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             
-            {/* Contact Information */}
-            <div className="space-y-8">
-              <div className="text-center lg:text-left mb-12">
-                <h2 className="text-4xl font-black text-[#002F4B] mb-6">Let's Connect</h2>
-                <div className="h-1 w-32 bg-gradient-to-r from-[#B8860B] to-[#B8860B]/50 rounded-full mx-auto lg:mx-0 mb-6"></div>
-                <p className="text-lg text-[#002F4B]/70">
-                  With over 14 years of experience serving California and beyond, we're here to answer your questions and provide personalized insurance solutions.
-                </p>
-              </div>
-
-              {/* Contact Cards */}
-              <div className="space-y-6">
-                {/* Phone */}
-                <div className="group">
-                  <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 border-2 border-[#002F4B]/10 hover:border-[#B8860B]/40 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-2">
-                    <div className="flex items-center space-x-6">
-                      <div className="w-16 h-16 bg-gradient-to-br from-[#B8860B] to-[#B8860B]/80 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
-                        <FaPhone className="text-2xl text-[#002F4B]" />
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-black text-[#002F4B] mb-2">Call Us</h3>
-                        <p className="text-[#002F4B]/70 text-lg font-bold">(951) 737-3832</p>
-                        <p className="text-[#002F4B]/60">Monday - Friday, 9 AM - 6 PM</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Email */}
-                <div className="group">
-                  <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 border-2 border-[#002F4B]/10 hover:border-[#B8860B]/40 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-2">
-                    <div className="flex items-start space-x-6"> {/* Cambiado de items-center a items-start */}
-                      <div className="w-16 h-16 bg-gradient-to-br from-[#002F4B] to-[#002F4B]/80 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300 flex-shrink-0"> {/* Agregado flex-shrink-0 */}
-                        <FaEnvelope className="text-2xl text-[#FDF6E3]" />
-                      </div>
-                      <div className="flex-1 min-w-0"> {/* Agregado flex-1 y min-w-0 para permitir que el contenido se ajuste */}
-                        <h3 className="text-xl font-black text-[#002F4B] mb-2">Email Us</h3>
-                        <p className="text-[#002F4B]/70 text-lg font-bold break-all sm:break-normal">marketing@goldenvistains.com</p> {/* Agregado break-all para móvil y break-normal para desktop */}
-                        <p className="text-[#002F4B]/60">We'll respond within 24 hours</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Address */}
-                <div className="group">
-                  <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 border-2 border-[#002F4B]/10 hover:border-[#B8860B]/40 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-2">
-                    <div className="flex items-center space-x-6">
-                      <div className="w-16 h-16 bg-gradient-to-br from-[#B8860B] to-[#B8860B]/80 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
-                        <FaMapMarkerAlt className="text-2xl text-[#002F4B]" />
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-black text-[#002F4B] mb-2">Visit Us</h3>
-                        <p className="text-[#002F4B]/70 text-lg font-bold">1160 Hamner Ave STE B</p>
-                        <p className="text-[#002F4B]/70 text-lg font-bold">Riverside, CA 92860</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Hours */}
-                <div className="group">
-                  <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 border-2 border-[#002F4B]/10 hover:border-[#B8860B]/40 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-2">
-                    <div className="flex items-center space-x-6">
-                      <div className="w-16 h-16 bg-gradient-to-br from-[#002F4B] to-[#002F4B]/80 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
-                        <FaClock className="text-2xl text-[#FDF6E3]" />
-                      </div>
-                      <div>
-                        <h3 className="text-xl font-black text-[#002F4B] mb-2">Business Hours</h3>
-                        <p className="text-[#002F4B]/70 font-bold">Mon - Fri: 9:00 AM - 6:00 PM</p>
-                        <p className="text-[#002F4B]/70 font-bold">Saturday: 10:00 AM - 4:00 PM</p>
-                        <p className="text-[#002F4B]/70 font-bold">Sunday: Closed</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Contact Form */}
+             {/* Contact Form */}
             <div className="relative">
               <div className="bg-gradient-to-br from-[#002F4B] to-[#001B2E] rounded-3xl p-8 shadow-2xl border-4 border-[#B8860B]/30">
                 {!isSubmitted ? (
@@ -376,6 +297,88 @@ export default function ContactUsPage() {
                 )}
               </div>
             </div>
+
+
+            {/* Contact Information */}
+            <div className="space-y-8">
+              <div className="text-center lg:text-left mb-12">
+                <h2 className="text-4xl font-black text-[#002F4B] mb-6">Let's Connect</h2>
+                <div className="h-1 w-32 bg-gradient-to-r from-[#B8860B] to-[#B8860B]/50 rounded-full mx-auto lg:mx-0 mb-6"></div>
+                <p className="text-lg text-[#002F4B]/70">
+                  With over 14 years of experience serving California and beyond, we're here to answer your questions and provide personalized insurance solutions.
+                </p>
+              </div>
+
+              {/* Contact Cards */}
+              <div className="space-y-6">
+                {/* Phone */}
+                <div className="group">
+                  <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 border-2 border-[#002F4B]/10 hover:border-[#B8860B]/40 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-2">
+                    <div className="flex items-center space-x-6">
+                      <div className="w-16 h-16 bg-gradient-to-br from-[#B8860B] to-[#B8860B]/80 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+                        <FaPhone className="text-2xl text-[#002F4B]" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-black text-[#002F4B] mb-2">Call Us</h3>
+                        <p className="text-[#002F4B]/70 text-lg font-bold">(951) 737-3832</p>
+                        <p className="text-[#002F4B]/60">Monday - Friday, 9 AM - 6 PM</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Email */}
+                <div className="group">
+                  <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 border-2 border-[#002F4B]/10 hover:border-[#B8860B]/40 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-2">
+                    <div className="flex items-start space-x-6"> {/* Cambiado de items-center a items-start */}
+                      <div className="w-16 h-16 bg-gradient-to-br from-[#002F4B] to-[#002F4B]/80 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300 flex-shrink-0"> {/* Agregado flex-shrink-0 */}
+                        <FaEnvelope className="text-2xl text-[#FDF6E3]" />
+                      </div>
+                      <div className="flex-1 min-w-0"> {/* Agregado flex-1 y min-w-0 para permitir que el contenido se ajuste */}
+                        <h3 className="text-xl font-black text-[#002F4B] mb-2">Email Us</h3>
+                        <p className="text-[#002F4B]/70 text-lg font-bold break-all sm:break-normal">marketing@goldenvistains.com</p> {/* Agregado break-all para móvil y break-normal para desktop */}
+                        <p className="text-[#002F4B]/60">We'll respond within 24 hours</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Address */}
+                <div className="group">
+                  <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 border-2 border-[#002F4B]/10 hover:border-[#B8860B]/40 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-2">
+                    <div className="flex items-center space-x-6">
+                      <div className="w-16 h-16 bg-gradient-to-br from-[#B8860B] to-[#B8860B]/80 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+                        <FaMapMarkerAlt className="text-2xl text-[#002F4B]" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-black text-[#002F4B] mb-2">Visit Us</h3>
+                        <p className="text-[#002F4B]/70 text-lg font-bold">1160 Hamner Ave STE B</p>
+                        <p className="text-[#002F4B]/70 text-lg font-bold">Riverside, CA 92860</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Hours */}
+                <div className="group">
+                  <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 border-2 border-[#002F4B]/10 hover:border-[#B8860B]/40 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-2">
+                    <div className="flex items-center space-x-6">
+                      <div className="w-16 h-16 bg-gradient-to-br from-[#002F4B] to-[#002F4B]/80 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+                        <FaClock className="text-2xl text-[#FDF6E3]" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-black text-[#002F4B] mb-2">Business Hours</h3>
+                        <p className="text-[#002F4B]/70 font-bold">Mon - Fri: 9:00 AM - 6:00 PM</p>
+                        <p className="text-[#002F4B]/70 font-bold">Saturday: 10:00 AM - 4:00 PM</p>
+                        <p className="text-[#002F4B]/70 font-bold">Sunday: Closed</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+           
           </div>
         </div>
       </section>
