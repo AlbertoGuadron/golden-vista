@@ -2,6 +2,8 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from "next/link";
+import { FaWhatsapp } from 'react-icons/fa';
 import { FaShieldAlt, FaFire, FaTint, FaTools, FaHandshake, FaQuoteLeft, FaPhone } from 'react-icons/fa';
 import Header from "@/components/header";
 import Footer from "@/components/footer";
@@ -158,15 +160,23 @@ export default function AboutUs() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Link href="/contactus" className="inline-block">
             <button className="bg-gradient-to-r from-[#B8860B] to-[#B8860B]/80 hover:from-[#B8860B]/90 hover:to-[#B8860B] text-[#002F4B] font-black py-4 px-8 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl border-2 border-[#B8860B] hover:border-[#B8860B]/80">
               <FaQuoteLeft className="inline mr-2" />
               Get Free Quote
             </button>
-            
-            <button className="bg-transparent hover:bg-[#B8860B]/10 text-[#FDF6E3] font-bold py-4 px-8 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 border-2 border-[#B8860B]/50 hover:border-[#B8860B]">
-              <FaPhone className="inline mr-2" />
-              Call Now
-            </button>
+            </Link>
+            <a 
+                href="https://wa.me/19518091141?text=Hello%2C%20I%27m%20interested%20in%20learning%20more%20about%20your%20insurance%20services." 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <button className="bg-transparent hover:bg-[#25D366]/10 text-[#FDF6E3] font-bold py-4 px-8 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 border-2 border-[#25D366]/50 hover:border-[#25D366] hover:text-[#25D366]">
+                  <FaWhatsapp className="inline mr-2" />
+                  WhatsApp Us
+                </button>
+              </a>
           </div>
         </div>
       </section>

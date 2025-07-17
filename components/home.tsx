@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import Link from "next/link";
 import { ChevronLeft, ChevronRight, Shield, Truck, Home, Car, Users, Award, Clock, MapPin } from 'lucide-react';
 
 const HomePage = () => {
@@ -209,10 +210,12 @@ const HomePage = () => {
 
             {/* CTA Section */}
             <div className="text-center mt-16">
+              <Link href="/contactus" className="inline-block">
               <button className="group relative px-12 py-6 bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 text-[#002F4B] font-black text-xl tracking-wide rounded-2xl hover:shadow-2xl hover:shadow-[#B8860B]/30 transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 border-4 border-[#B8860B] hover:border-[#B8860B]/80">
                 <span className="relative z-10">GET YOUR QUOTE TODAY</span>
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#B8860B]/80 to-[#B8860B] scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
               </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Shield, Zap, MessageCircle, Heart, Clock, Phone, Play, Star, Award, Clipboard } from 'lucide-react';
+import Link from "next/link";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
@@ -74,7 +75,7 @@ const PetInsurancePage: React.FC = () => {
     {
       name: "Sarah Johnson",
       pet: "Buddy 🐕",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b647?w=150&h=150&fit=crop&crop=face",
+      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face",
       testimonial: "When Buddy swallowed a toy, Prudent Pet covered the $3,200 surgery. The claim was processed in just 12 hours!",
       rating: 5
     },
@@ -154,12 +155,14 @@ const PetInsurancePage: React.FC = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Link href="https://www.prudentpet.com" className="inline-block" target='_blank'>
                 <button 
                   type="button"
                   className="bg-gradient-to-r from-[#B8860B] to-[#B8860B]/80 hover:from-[#B8860B]/90 hover:to-[#B8860B] text-[#002F4B] font-black py-4 px-8 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
                 >
                   🎯 Get Free Quote
                 </button>
+                </Link>
               </div>
             </div>
             
@@ -403,19 +406,14 @@ const PetInsurancePage: React.FC = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Link href="https://www.prudentpet.com" className="inline-block" target='_blank'>
             <button 
               type="button"
               className="bg-gradient-to-r from-[#B8860B] to-[#B8860B]/80 hover:from-[#B8860B]/90 hover:to-[#B8860B] text-[#002F4B] font-black py-4 px-8 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl animate-pulse hover:animate-none"
             >
               🎯 Get Free Quote Now!
             </button>
-            
-            <button 
-              type="button"
-              className="bg-transparent hover:bg-[#B8860B]/10 text-[#FDF6E3] font-bold py-4 px-8 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 border-2 border-[#B8860B]/50 hover:border-[#B8860B]"
-            >
-              📞 Call the Pet Experts!
-            </button>
+            </Link>
           </div>
           
           <div className="mt-12 text-[#FDF6E3]/60">

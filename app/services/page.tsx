@@ -341,10 +341,10 @@ export default function ServicesPage() {
               Get Free Quote
             </button>
             
-            <button className="bg-transparent hover:bg-[#002F4B]/10 text-[#002F4B] font-bold py-4 px-8 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 border-2 border-[#002F4B]/50 hover:border-[#002F4B]">
+            {/*<button className="bg-transparent hover:bg-[#002F4B]/10 text-[#002F4B] font-bold py-4 px-8 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 border-2 border-[#002F4B]/50 hover:border-[#002F4B]">
               <FaHandshake className="inline mr-2" />
               Schedule Consultation
-            </button>
+            </button>*/}
           </div>
         </div>
       </section>

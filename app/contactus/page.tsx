@@ -181,13 +181,13 @@ export default function ContactUsPage() {
                 {/* Email */}
                 <div className="group">
                   <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 border-2 border-[#002F4B]/10 hover:border-[#B8860B]/40 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-2">
-                    <div className="flex items-center space-x-6">
-                      <div className="w-16 h-16 bg-gradient-to-br from-[#002F4B] to-[#002F4B]/80 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+                    <div className="flex items-start space-x-6"> {/* Cambiado de items-center a items-start */}
+                      <div className="w-16 h-16 bg-gradient-to-br from-[#002F4B] to-[#002F4B]/80 rounded-2xl flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300 flex-shrink-0"> {/* Agregado flex-shrink-0 */}
                         <FaEnvelope className="text-2xl text-[#FDF6E3]" />
                       </div>
-                      <div>
+                      <div className="flex-1 min-w-0"> {/* Agregado flex-1 y min-w-0 para permitir que el contenido se ajuste */}
                         <h3 className="text-xl font-black text-[#002F4B] mb-2">Email Us</h3>
-                        <p className="text-[#002F4B]/70 text-lg font-bold">marketing@goldenvistains.com</p>
+                        <p className="text-[#002F4B]/70 text-lg font-bold break-all sm:break-normal">marketing@goldenvistains.com</p> {/* Agregado break-all para móvil y break-normal para desktop */}
                         <p className="text-[#002F4B]/60">We'll respond within 24 hours</p>
                       </div>
                     </div>
