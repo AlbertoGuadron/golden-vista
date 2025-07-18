@@ -18,6 +18,7 @@ import {
   FaTools,
   FaUsers,
   FaFileContract,
+  FaPlane,
   FaAnchor
 } from "react-icons/fa";
 import Header from "@/components/header";
@@ -139,6 +140,12 @@ const truckingServices = [
     color: "from-[#B8860B]/80 to-[#B8860B]/60"
   },
   {
+    icon: FaShieldAlt,
+    title: "General Liability",
+    description: "Protects trucking businesses from claims of bodily injury, property damage, and personal injury that occur during business operations.",
+    color: "from-[#B8860B]/80 to-[#B8860B]/60"
+  },
+  {
     icon: FaAnchor,
     title: "Motor Truck Cargo",
     description: "Covers damage or loss of cargo while being transported.",
@@ -163,6 +170,18 @@ const specialtyServices = [
     icon: FaCertificate,
     title: "Bonds (Surety Bonds)",
     description: "Guarantees performance, compliance, or payment for contracts or business obligations. Includes license & permit bonds, contract bonds, and fidelity bonds.",
+    color: "from-[#FDF6E3]/20 to-[#FDF6E3]/10"
+  },
+  {
+    icon: FaPlane,
+    title: "Travel Insurance",
+    description: "Comprehensive coverage for domestic and international travel including trip cancellation, medical emergencies, baggage loss, and travel delays.",
+    color: "from-[#FDF6E3]/20 to-[#FDF6E3]/10"
+  },
+  {
+    icon: FaHome,
+    title: "Home Warranty",
+    description: "Protects homeowners from unexpected repair costs for major home systems and appliances including HVAC, plumbing, electrical, and kitchen appliances.",
     color: "from-[#FDF6E3]/20 to-[#FDF6E3]/10"
   }
 ];

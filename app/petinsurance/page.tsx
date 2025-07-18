@@ -99,7 +99,7 @@ const PetInsurancePage: React.FC = () => {
     "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=300&h=300&fit=crop",
     "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
     "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=300&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=300&h=300&fit=crop",
+    "https://images.unsplash.com/photo-1654995158886-4c474025786b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.unsplash.com/photo-1552053831-71594a27632d?w=300&h=300&fit=crop",
     "https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?w=300&h=300&fit=crop",
     "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=300&h=300&fit=crop",
@@ -155,7 +155,7 @@ const PetInsurancePage: React.FC = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Link href="https://www.prudentpet.com" className="inline-block" target='_blank'>
+                <Link href="https://app.prudentpet.com/?promoCode=GVIA" className="inline-block" target='_blank'>
                 <button 
                   type="button"
                   className="bg-gradient-to-r from-[#B8860B] to-[#B8860B]/80 hover:from-[#B8860B]/90 hover:to-[#B8860B] text-[#002F4B] font-black py-4 px-8 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
@@ -169,7 +169,7 @@ const PetInsurancePage: React.FC = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-[#B8860B]/20 to-transparent rounded-3xl transform rotate-3"></div>
               <img 
-                src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?q=80&w=1000&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?q=80&w=1000&auto=format&fit=crop"
                 alt="Happy pets playing together - dogs and cats"
                 className="relative rounded-3xl shadow-2xl w-full h-96 object-cover hover:transform hover:scale-105 transition-transform duration-500"
               />
@@ -406,7 +406,7 @@ const PetInsurancePage: React.FC = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Link href="https://www.prudentpet.com" className="inline-block" target='_blank'>
+            <Link href="https://app.prudentpet.com/?promoCode=GVIA" className="inline-block" target='_blank'>
             <button 
               type="button"
               className="bg-gradient-to-r from-[#B8860B] to-[#B8860B]/80 hover:from-[#B8860B]/90 hover:to-[#B8860B] text-[#002F4B] font-black py-4 px-8 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl animate-pulse hover:animate-none"

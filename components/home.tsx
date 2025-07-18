@@ -12,7 +12,7 @@ const HomePage = () => {
       id: 1,
       title: "TRUCKING INSURANCE",
       subtitle: "Complete Coverage for Commercial Fleets",
-      image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+      image: "https://images.unsplash.com/photo-1714732227900-3e79c4fc3121?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       icon: <Truck className="w-16 h-16" />,
       description: "Protecting your livelihood on every mile"
     },

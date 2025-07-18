@@ -77,12 +77,11 @@ export default function Footer() {
               
               <div className="bg-[#B8860B]/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-[#B8860B]/20 hover:border-[#B8860B]/40 transition-all duration-300 hover:shadow-2xl">
                 <p className="text-[#FDF6E3]/90 font-semibold text-lg leading-relaxed mb-4">
-                  We serve Arizona, Florida, Illinois, Maine, North Carolina, Ohio, Texas, and Utah
+                  Golden Vista Insurance Agency is fully licensed in the state of California 📍 California (#6014853) and proudly serves clients in the following additional states:
                 </p>
                 
                 <div className="space-y-2 text-sm font-medium text-[#FDF6E3]/80">
                   <div className="grid grid-cols-1 gap-1">
-                    <span>📍 California (#6014853)</span>
                     <span>📍 Arizona (#3003444652)</span>
                     <span>📍 Florida (#L129232)</span>
                     <span>📍 Illinois (#3003451813)</span>
@@ -93,6 +92,9 @@ export default function Footer() {
                     <span>📍 Utah (#1058074)</span>
                   </div>
                 </div>
+                <p className="text-[#FDF6E3]/90 font-semibold text-lg leading-relaxed mb-4">
+                  Wherever life takes you, we're here to help protect what matters most.
+                </p>
               </div>
             </div>
           </div>

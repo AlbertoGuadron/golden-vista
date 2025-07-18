@@ -56,44 +56,44 @@ const Header: React.FC = () => {
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#FDF6E3]/20 to-[#FDF6E3]/10 scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
             </Link>
 
-            {/* Regular Navigation Buttons */}
+            {/* Regular Navigation Buttons - Uniform Size */}
             <Link
               href="/"
-              className="relative text-[#FDF6E3] font-bold text-base px-5 py-2 rounded-xl bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 hover:from-[#B8860B]/90 hover:to-[#B8860B] transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 group border-2 border-[#B8860B]/50 hover:border-[#B8860B] shadow-md hover:shadow-[#B8860B]/30"
+              className="relative text-[#FDF6E3] font-bold text-base w-24 h-12 flex items-center justify-center rounded-xl bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 hover:from-[#B8860B]/90 hover:to-[#B8860B] transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 group border-2 border-[#B8860B]/50 hover:border-[#B8860B] shadow-md hover:shadow-[#B8860B]/30"
             >
-              <span className="relative z-10 tracking-wide text-[#002F4B] font-black">HOME</span>
+              <span className="relative z-10 tracking-wide text-[#002F4B] font-black text-sm">HOME</span>
               <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
             </Link>
 
             <Link
               href="/aboutus"
-              className="relative text-[#FDF6E3] font-bold text-base px-5 py-2 rounded-xl bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 hover:from-[#B8860B]/90 hover:to-[#B8860B] transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 group border-2 border-[#B8860B]/50 hover:border-[#B8860B] shadow-md hover:shadow-[#B8860B]/30"
+              className="relative text-[#FDF6E3] font-bold text-base w-24 h-12 flex items-center justify-center rounded-xl bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 hover:from-[#B8860B]/90 hover:to-[#B8860B] transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 group border-2 border-[#B8860B]/50 hover:border-[#B8860B] shadow-md hover:shadow-[#B8860B]/30"
             >
-              <span className="relative z-10 tracking-wide text-[#002F4B] font-black">ABOUT US</span>
+              <span className="relative z-10 tracking-wide text-[#002F4B] font-black text-sm">ABOUT</span>
               <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
             </Link>
 
             <Link
               href="/services"
-              className="relative text-[#FDF6E3] font-bold text-base px-5 py-2 rounded-xl bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 hover:from-[#B8860B]/90 hover:to-[#B8860B] transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 group border-2 border-[#B8860B]/50 hover:border-[#B8860B] shadow-md hover:shadow-[#B8860B]/30"
+              className="relative text-[#FDF6E3] font-bold text-base w-24 h-12 flex items-center justify-center rounded-xl bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 hover:from-[#B8860B]/90 hover:to-[#B8860B] transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 group border-2 border-[#B8860B]/50 hover:border-[#B8860B] shadow-md hover:shadow-[#B8860B]/30"
             >
-              <span className="relative z-10 tracking-wide text-[#002F4B] font-black">SERVICES</span>
+              <span className="relative z-10 tracking-wide text-[#002F4B] font-black text-sm">SERVICES</span>
               <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
             </Link>
 
             <Link
               href="/petinsurance"
-              className="relative text-[#FDF6E3] font-bold text-base px-5 py-2 rounded-xl bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 hover:from-[#B8860B]/90 hover:to-[#B8860B] transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 group border-2 border-[#B8860B]/50 hover:border-[#B8860B] shadow-md hover:shadow-[#B8860B]/30"
+              className="relative text-[#FDF6E3] font-bold text-base w-32 h-12 flex items-center justify-center rounded-xl bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 hover:from-[#B8860B]/90 hover:to-[#B8860B] transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 group border-2 border-[#B8860B]/50 hover:border-[#B8860B] shadow-md hover:shadow-[#B8860B]/30"
             >
-              <span className="relative z-10 tracking-wide text-[#002F4B] font-black">PET INSURANCE</span>
+              <span className="relative z-10 tracking-wide text-[#002F4B] font-black text-sm">PET INS.</span>
               <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
             </Link>
 
             <Link
               href="/contactus"
-              className="relative text-[#FDF6E3] font-bold text-base px-5 py-2 rounded-xl bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 hover:from-[#B8860B]/90 hover:to-[#B8860B] transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 group border-2 border-[#B8860B]/50 hover:border-[#B8860B] shadow-md hover:shadow-[#B8860B]/30"
+              className="relative text-[#FDF6E3] font-bold text-base w-28 h-12 flex items-center justify-center rounded-xl bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 hover:from-[#B8860B]/90 hover:to-[#B8860B] transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-xl hover:-translate-y-1 group border-2 border-[#B8860B]/50 hover:border-[#B8860B] shadow-md hover:shadow-[#B8860B]/30"
             >
-              <span className="relative z-10 tracking-wide text-[#002F4B] font-black">CONTACT US</span>
+              <span className="relative z-10 tracking-wide text-[#002F4B] font-black text-sm">CONTACT</span>
               <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-[#B8860B]/20 to-[#B8860B]/10 scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
             </Link>
           </nav>
