@@ -77,7 +77,7 @@ export default function Footer() {
               
               <div className="bg-[#B8860B]/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-[#B8860B]/20 hover:border-[#B8860B]/40 transition-all duration-300 hover:shadow-2xl">
                 <p className="text-[#FDF6E3]/90 font-semibold text-lg leading-relaxed mb-4">
-                  Golden Vista Insurance Agency is fully licensed in the state of California 📍 California (#6014853) and proudly serves clients in the following additional states:
+                  Golden Vista Insurance Agency is fully licensed in the state of📍 California (#6014853) and proudly serves clients in the following additional states:
                 </p>
                 
                 <div className="space-y-2 text-sm font-medium text-[#FDF6E3]/80">
