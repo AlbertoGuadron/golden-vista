@@ -132,10 +132,10 @@ export default function ContactUsPage() {
               </span>
             </div>
             <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight text-[#FDF6E3]">
-              Contact
+              Get your
               <br/>
               <span className="bg-gradient-to-r from-[#B8860B] to-[#FDF6E3] bg-clip-text text-transparent">
-                Golden Vista
+                Free Quote
               </span>
             </h1>
             <p className="text-xl text-[#FDF6E3]/80 max-w-3xl mx-auto leading-relaxed">
