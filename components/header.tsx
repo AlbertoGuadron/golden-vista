@@ -32,14 +32,15 @@ const Header: React.FC = () => {
                 </Link>
               </div>
 
-              <div className="hidden lg:block text-left min-w-0">
-                <h1 className="text-[#FDF6E3] font-black text-xl xl:text-2xl tracking-tight bg-gradient-to-r from-[#FDF6E3] to-[#B8860B] bg-clip-text text-transparent drop-shadow-lg whitespace-nowrap">
-                  Golden Vista Insurance Agency
+              <div className="text-left min-w-0">
+                <h1 className="text-[#FDF6E3] font-black text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl tracking-tight bg-gradient-to-r from-[#FDF6E3] to-[#B8860B] bg-clip-text text-transparent drop-shadow-lg">
+                  <span className="block sm:inline">Golden Vista</span>
+                  <span className="block sm:inline"> Insurance Agency</span>
                 </h1>
-                <p className="text-[#FDF6E3]/70 font-medium text-xs italic tracking-wide whitespace-nowrap">
+                <p className="text-[#FDF6E3]/70 font-medium text-xs italic tracking-wide">
                   "Secure Today, Shine Tomorrow"
                 </p>
-                <div className="h-1 w-12 bg-gradient-to-r from-[#B8860B] to-[#B8860B]/50 rounded-full mt-1"></div>
+                <div className="h-0.5 sm:h-1 w-8 sm:w-12 bg-gradient-to-r from-[#B8860B] to-[#B8860B]/50 rounded-full mt-1"></div>
               </div>
             </div>
               
