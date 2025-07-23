@@ -389,8 +389,11 @@ export default function ContactUsPage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-black text-[#FDF6E3] mb-6">Why Choose Golden Vista?</h2>
             <div className="h-1 w-32 bg-gradient-to-r from-transparent via-[#B8860B] to-transparent rounded-full mx-auto mb-6"></div>
+            <p className="text-lg text-[#FDF6E3]/80 max-w-2xl mx-auto mb-6">
+              Because real coverage starts with real service. We specialize in home, auto, and business insurance, offering expert guidance and customized protection, backed by over 10 years of experience and licensed in 9 states.
+            </p>
             <p className="text-lg text-[#FDF6E3]/80 max-w-2xl mx-auto">
-              Over 14 years of experience protecting families and businesses across California and 8 other states.
+            People first. Policies that work.
             </p>
           </div>
 

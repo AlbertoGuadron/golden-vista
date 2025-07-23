@@ -355,10 +355,12 @@ export default function ServicesPage() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <Link href="/contactus" className="inline-block">
             <button className="bg-gradient-to-r from-[#B8860B] to-[#B8860B]/80 hover:from-[#B8860B]/90 hover:to-[#B8860B] text-[#002F4B] font-black py-4 px-8 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
               <FaFileContract className="inline mr-2" />
               Get Free Quote
             </button>
+            </Link>
             
             {/*<button className="bg-transparent hover:bg-[#002F4B]/10 text-[#002F4B] font-bold py-4 px-8 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 border-2 border-[#002F4B]/50 hover:border-[#002F4B]">
               <FaHandshake className="inline mr-2" />

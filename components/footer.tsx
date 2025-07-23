@@ -59,7 +59,7 @@ export default function Footer() {
                   <FaInstagram className="text-2xl text-[#FDF6E3] group-hover:text-[#002F4B] transition-colors duration-300" />
                 </div>
               </Link>*/}
-              <Link href="https://www.yelp.com/biz/golden-vista-insurance-agency-riverside-2" className="group" target="blank">
+              <Link href="https://www.yelp.com/biz/golden-vista-insurance-agency-riverside-2" className="group" target="_blank">
                 <div className="p-4 rounded-2xl bg-[#B8860B]/10 hover:bg-[#B8860B] transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:-translate-y-1 border-2 border-[#B8860B]/20 hover:border-[#B8860B]">
                   <FaYelp className="text-2xl text-[#FDF6E3] group-hover:text-[#002F4B] transition-colors duration-300" />
                 </div>
@@ -71,32 +71,53 @@ export default function Footer() {
           <div className="flex flex-col items-center lg:items-end justify-center space-y-6">
             <div className="text-center lg:text-right">
               <div className="flex items-center justify-center lg:justify-end space-x-3 mb-4">
-                <FaCertificate className="text-[#B8860B] text-2xl" />
-                <h4 className="text-2xl font-black text-[#FDF6E3] tracking-wide">LICENSED STATES</h4>
+                <FaCertificate className="text-[#B8860B] text-xl" />
+                <h4 className="text-xl font-black text-[#FDF6E3] tracking-wide">LICENSED STATES</h4>
               </div>
               
-              <div className="bg-[#B8860B]/10 backdrop-blur-sm rounded-2xl p-6 border-2 border-[#B8860B]/20 hover:border-[#B8860B]/40 transition-all duration-300 hover:shadow-2xl">
-                <p className="text-[#FDF6E3]/90 font-semibold text-lg leading-relaxed mb-4">
-                  Golden Vista Insurance Agency is fully licensed in the state of📍 California (#6014853) and proudly serves clients in the following additional states:
+              <div className="bg-[#B8860B]/10 backdrop-blur-sm rounded-xl p-4 border-2 border-[#B8860B]/20 hover:border-[#B8860B]/40 transition-all duration-300 hover:shadow-xl max-w-sm">
+                <p className="text-[#FDF6E3]/90 font-semibold text-sm leading-relaxed mb-3">
+                  Golden Vista Insurance Agency is fully licensed in the state of 📍 California (#6014853) and proudly serves clients in the following additional states:
                 </p>
                 
-                <div className="space-y-2 text-sm font-medium text-[#FDF6E3]/80">
-                  <div className="grid grid-cols-1 gap-1">
+                <div className="space-y-1 text-xs font-medium text-[#FDF6E3]/80">
+                  <div className="grid grid-cols-2 gap-x-2 gap-y-1">
                     <span>📍 Arizona (#3003444652)</span>
                     <span>📍 Florida (#L129232)</span>
                     <span>📍 Illinois (#3003451813)</span>
                     <span>📍 Maine (#AGN504666)</span>
-                    <span>📍 North Carolina (#3003451925)</span>
+                    <span>📍 N. Carolina (#3003451925)</span>
                     <span>📍 Ohio (#1634055)</span>
                     <span>📍 Texas (#3276809)</span>
                     <span>📍 Utah (#1058074)</span>
                   </div>
                 </div>
-                <p className="text-[#FDF6E3]/90 font-semibold text-lg leading-relaxed mb-4">
+                <p className="text-[#FDF6E3]/90 font-semibold text-sm leading-relaxed mt-3">
                   Wherever life takes you, we're here to help protect what matters most.
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Terms & Privacy Links Section */}
+        <div className="relative mb-8">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12">
+            <Link 
+              href="/termsconditions" 
+              className="group relative px-8 py-3 bg-[#B8860B]/10 hover:bg-[#B8860B] text-[#FDF6E3] font-bold text-lg rounded-2xl transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:-translate-y-1 border-2 border-[#B8860B]/30 hover:border-[#B8860B]"
+            >
+              <span className="relative z-10 group-hover:text-[#002F4B] transition-colors duration-300">Terms & Conditions</span>
+            </Link>
+            
+            <div className="hidden sm:block w-px h-8 bg-gradient-to-b from-transparent via-[#B8860B]/50 to-transparent"></div>
+            
+            <Link 
+              href="/privacypolicy" 
+              className="group relative px-8 py-3 bg-[#B8860B]/10 hover:bg-[#B8860B] text-[#FDF6E3] font-bold text-lg rounded-2xl transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:-translate-y-1 border-2 border-[#B8860B]/30 hover:border-[#B8860B]"
+            >
+              <span className="relative z-10 group-hover:text-[#002F4B] transition-colors duration-300">Privacy Policy</span>
+            </Link>
           </div>
         </div>
 

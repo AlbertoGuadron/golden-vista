@@ -15,7 +15,6 @@ interface FloatingEmojiProps {
 interface TestimonialCardProps {
   name: string;
   pet: string;
-  image: string;
   testimonial: string;
   rating: number;
 }
@@ -23,7 +22,6 @@ interface TestimonialCardProps {
 interface Testimonial {
   name: string;
   pet: string;
-  image: string;
   testimonial: string;
   rating: number;
 }
@@ -32,7 +30,7 @@ interface Testimonial {
 const FloatingEmoji: React.FC<FloatingEmojiProps> = ({ emoji, delay = 0 }) => {
   return (
     <div 
-      className="absolute animate-bounce text-4xl opacity-30 hover:opacity-70 transition-opacity duration-300"
+      className="animate-bounce text-2xl md:text-4xl opacity-20 md:opacity-30 hover:opacity-70 transition-opacity duration-300 pointer-events-none"
       style={{
         animationDelay: `${delay}s`,
         animationDuration: '3s'
@@ -43,27 +41,29 @@ const FloatingEmoji: React.FC<FloatingEmojiProps> = ({ emoji, delay = 0 }) => {
   );
 };
 
-// Testimonial component
-const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, pet, image, testimonial, rating }) => {
+// Testimonial component actualizado
+const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, pet, testimonial, rating }) => {
   return (
     <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 border-2 border-[#B8860B]/20 hover:border-[#B8860B]/40 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-2 h-full">
-      <div className="flex items-center mb-6">
-        <img 
-          src={image}
-          alt={`${name} with ${pet}`}
-          className="w-20 h-20 rounded-full border-4 border-[#B8860B]/30 mr-4 object-cover"
-        />
-        <div>
-          <h4 className="font-black text-[#002F4B] text-lg">{name}</h4>
-          <p className="text-[#B8860B] font-bold">Pet Parent to {pet}</p>
-          <div className="flex space-x-1 mt-2">
-            {[...Array(rating)].map((_, i) => (
-              <Star key={i} className="text-[#B8860B] w-4 h-4 fill-current" />
-            ))}
-          </div>
+      {/* Testimonio principal */}
+      <div className="mb-8">
+        <p className="text-[#002F4B]/80 italic leading-relaxed text-center text-lg">
+          "{testimonial}"
+        </p>
+      </div>
+      
+      {/* Información del cliente */}
+      <div className="text-center">
+        <h4 className="font-black text-[#002F4B] text-xl mb-2">{name}</h4>
+        <p className="text-[#B8860B] font-bold text-lg mb-4">Pet Parent to {pet}</p>
+        
+        {/* Estrellas */}
+        <div className="flex justify-center space-x-1">
+          {[...Array(rating)].map((_, i) => (
+            <Star key={i} className="text-[#B8860B] w-6 h-6 fill-current" />
+          ))}
         </div>
       </div>
-      <p className="text-[#002F4B]/80 italic leading-relaxed">"{testimonial}"</p>
     </div>
   );
 };
@@ -75,21 +75,18 @@ const PetInsurancePage: React.FC = () => {
     {
       name: "Sarah Johnson",
       pet: "Buddy 🐕",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face",
       testimonial: "When Buddy swallowed a toy, Prudent Pet covered the $3,200 surgery. The claim was processed in just 12 hours!",
       rating: 5
     },
     {
       name: "Mike Chen",
       pet: "Whiskers 🐱",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
       testimonial: "The 24/7 vet chat saved us a midnight emergency visit. Whiskers is healthy and we saved $400!",
       rating: 5
     },
     {
       name: "Emma Davis",
       pet: "Luna & Max 🐕🐱",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
       testimonial: "Having both my pets covered gives me such peace of mind. The customer service is amazing!",
       rating: 5
     }
@@ -123,12 +120,22 @@ const PetInsurancePage: React.FC = () => {
       <Header/>
       {/* Hero Section with Floating Elements */}
       <section className="relative overflow-hidden py-20 bg-gradient-to-br from-[#002F4B] via-[#002F4B]/95 to-[#001B2E]">
-        {/* Floating pet emojis */}
-        <FloatingEmoji emoji="🐕" delay={0} />
-        <FloatingEmoji emoji="🐱" delay={1} />
-        <FloatingEmoji emoji="🐾" delay={2} />
-        <FloatingEmoji emoji="🦴" delay={0.5} />
-        <FloatingEmoji emoji="🎾" delay={1.5} />
+        {/* Floating pet emojis - positioned across the screen */}
+        <div className="absolute top-10 left-10">
+          <FloatingEmoji emoji="🐕" delay={0} />
+        </div>
+        <div className="absolute top-20 right-20">
+          <FloatingEmoji emoji="🐱" delay={1} />
+        </div>
+        <div className="absolute top-40 left-1/4">
+          <FloatingEmoji emoji="🐾" delay={2} />
+        </div>
+        <div className="absolute bottom-20 right-10">
+          <FloatingEmoji emoji="🦴" delay={0.5} />
+        </div>
+        <div className="absolute bottom-40 left-20">
+          <FloatingEmoji emoji="🎾" delay={1.5} />
+        </div>
         
         <div className="absolute inset-0">
           <div className="absolute top-0 right-0 w-96 h-96 bg-[#B8860B] rounded-full blur-3xl opacity-20 transform translate-x-1/2 -translate-y-1/2"></div>
@@ -183,10 +190,10 @@ const PetInsurancePage: React.FC = () => {
 
       {/* Trust Badges Section with Fun Elements */}
       <section className="py-16 bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 relative">
-        <div className="absolute inset-0 opacity-10">
-          <div className="text-8xl animate-pulse">🏆</div>
-          <div className="text-6xl animate-bounce absolute top-8 right-8">⭐</div>
-          <div className="text-7xl animate-pulse absolute bottom-8 left-8">🎉</div>
+        <div className="absolute inset-0 opacity-10 pointer-events-none">
+          <div className="absolute top-8 left-8 text-6xl md:text-8xl animate-pulse">🏆</div>
+          <div className="absolute top-8 right-8 text-4xl md:text-6xl animate-bounce">⭐</div>
+          <div className="absolute bottom-8 left-8 text-5xl md:text-7xl animate-pulse">🎉</div>
         </div>
         
         <div className="container mx-auto px-8 relative z-10">
@@ -386,11 +393,11 @@ const PetInsurancePage: React.FC = () => {
       {/* Final CTA with Animation */}
       <section className="py-20 bg-gradient-to-br from-[#001B2E] via-[#002A40] to-[#001B2E] relative overflow-hidden">
         {/* Animated background elements */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="text-9xl animate-bounce absolute top-0 left-0">🐾</div>
-          <div className="text-8xl animate-pulse absolute top-20 right-20">❤️</div>
-          <div className="text-7xl animate-bounce absolute bottom-20 left-20">🎾</div>
-          <div className="text-6xl animate-pulse absolute bottom-0 right-0">🏠</div>
+        <div className="absolute inset-0 opacity-5 pointer-events-none">
+          <div className="absolute top-0 left-0 text-6xl md:text-9xl animate-bounce">🐾</div>
+          <div className="absolute top-20 right-20 text-5xl md:text-8xl animate-pulse">❤️</div>
+          <div className="absolute bottom-20 left-20 text-4xl md:text-7xl animate-bounce">🎾</div>
+          <div className="absolute bottom-0 right-0 text-3xl md:text-6xl animate-pulse">🏠</div>
         </div>
         
         <div className="container mx-auto px-8 text-center relative z-10">

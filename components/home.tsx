@@ -11,34 +11,34 @@ const HomePage = () => {
     {
       id: 1,
       title: "TRUCKING INSURANCE",
-      subtitle: "Complete Coverage for Commercial Fleets",
+      subtitle: "Coverage for Owner-Operators and Small Fleets",
       image: "https://images.unsplash.com/photo-1714732227900-3e79c4fc3121?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       icon: <Truck className="w-16 h-16" />,
-      description: "Protecting your livelihood on every mile"
+      description: "Protection that keeps your wheels and business moving"
     },
     {
       id: 2,
       title: "HOME INSURANCE",
-      subtitle: "Safeguarding Your Family's Foundation",
+      subtitle: "Protect What You’ve Built",
       image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
       icon: <Home className="w-16 h-16" />,
-      description: "Your sanctuary deserves comprehensive protection"
+      description: "From foundation to rooftop, coverage that feels like home"
     },
     {
       id: 3,
       title: "AUTO INSURANCE",
-      subtitle: "Drive with Confidence Every Day",
+      subtitle: "Drive Smart, Stay Covered",
       image: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
       icon: <Car className="w-16 h-16" />,
-      description: "Coverage that moves with your lifestyle"
+      description: "Reliable protection for everyday roads and unexpected turns"
     },
     {
       id: 4,
       title: "GENERAL LIABILITY",
-      subtitle: "Business Protection That Works",
-      image: "https://images.unsplash.com/photo-1609220136736-443140cffec6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+      subtitle: "Smart Coverage for Contractors & Small Business Owners",
+      image: "https://images.unsplash.com/photo-1587052694737-a972e4186288?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       icon: <Shield className="w-12 h-12" />,
-      description: "Comprehensive coverage for contractors and businesses"
+      description: "Flexible protection where your work happens"
     }
   ];
 
@@ -150,7 +150,7 @@ const HomePage = () => {
               </div>
               
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#002F4B] mb-8 tracking-tight leading-none">
-                TAILORED INSURANCE SOLUTIONS
+                Insurance That Works Where Life Takes You
               </h2>
               
               <div className="flex items-center justify-center space-x-3 mb-8">
@@ -165,23 +165,18 @@ const HomePage = () => {
 
             {/* Main Content */}
             <div className="bg-gradient-to-br from-[#B8860B]/10 to-[#002F4B]/10 backdrop-blur-sm rounded-3xl p-12 border-4 border-[#B8860B]/30 hover:border-[#B8860B]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#B8860B]/20">
-              <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-[#002F4B] font-medium text-center mb-12">
-                Insurance isn't just paperwork, <span className="font-black text-[#002F4B]">it's your defense against the unexpected</span>. 
-                Whether you're a trucker running loads on the 60, a homeowner facing flood risk near the Santa Ana River, 
-                or a contractor navigating strict city permit laws, 
-                <span className="font-black text-[#002F4B]"> Golden Vista Agency offers complete Insurance solutions in CA</span>, 
-                crafting coverage that fits the streets you live and work on.
+              <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-[#002F4B] font-medium text-center mb-8">
+                Whether you're running a business, protecting a home, or managing a fleet, 
+                <span className="font-black text-[#002F4B]"> Golden Vista Insurance Agency delivers clear, dependable coverage</span>, 
+                backed by 10+ years of experience and licensed in 9 states.
               </p>
-              
-              <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-[#002F4B] font-medium text-center mb-12">
-                We protect your livelihood, commercial fleets, family homes, leased units, and even life itself, 
-                against <span className="font-black text-[#002F4B]">real threats, not just theoretical ones</span>. 
-                With <span className="font-black text-[#002F4B]">14+ years rooted in CA</span>, 
-                we know where claims fall through and how to close those gaps, delivering policies built for impact, not appearances.
+
+              <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-[#002F4B] font-bold text-center mb-12 italic">
+                Secure Today, Shine Tomorrow
               </p>
 
               {/* Stats Section */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+              {/*<div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
                 <div className="text-center group">
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-[#B8860B] to-[#B8860B]/90 rounded-full mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                     <Award className="w-8 h-8 text-[#002F4B]" />
@@ -205,7 +200,7 @@ const HomePage = () => {
                   <h4 className="text-3xl font-black text-[#002F4B] mb-2">24/7</h4>
                   <p className="text-lg font-bold text-[#002F4B]/80">Support Available</p>
                 </div>
-              </div>
+              </div>*/}
             </div>
 
             {/* CTA Section */}
