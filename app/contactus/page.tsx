@@ -320,7 +320,7 @@ export default function ContactUsPage() {
                       </div>
                       <div>
                         <h3 className="text-xl font-black text-[#002F4B] mb-2">Call Us</h3>
-                        <p className="text-[#002F4B]/70 text-lg font-bold">(951) 737-3832</p>
+                        <p className="text-[#002F4B]/70 text-lg font-bold">(951) 809-1141</p>
                         <p className="text-[#002F4B]/60">Monday - Friday, 9 AM - 6 PM</p>
                       </div>
                     </div>
@@ -336,7 +336,7 @@ export default function ContactUsPage() {
                       </div>
                       <div className="flex-1 min-w-0"> {/* Agregado flex-1 y min-w-0 para permitir que el contenido se ajuste */}
                         <h3 className="text-xl font-black text-[#002F4B] mb-2">Email Us</h3>
-                        <p className="text-[#002F4B]/70 text-lg font-bold break-all sm:break-normal">marketing@goldenvistains.com</p> {/* Agregado break-all para móvil y break-normal para desktop */}
+                        <p className="text-[#002F4B]/70 text-lg font-bold break-all sm:break-normal">info@goldenvistains.com</p> {/* Agregado break-all para móvil y break-normal para desktop */}
                         <p className="text-[#002F4B]/60">We'll respond within 24 hours</p>
                       </div>
                     </div>
