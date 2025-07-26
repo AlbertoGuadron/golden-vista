@@ -89,7 +89,7 @@ export default function AboutUs() {
           
           <div className="bg-[#B8860B]/10 backdrop-blur-sm rounded-3xl p-12 border-2 border-[#B8860B]/20 hover:border-[#B8860B]/40 transition-all duration-500 hover:shadow-2xl">
             <p className="text-xl text-[#FDF6E3]/90 leading-relaxed mb-8 text-center">
-              <span className="font-bold text-[#B8860B]">The agency proudly serves clients across California, Arizona, Florida, Illinois, Maine, North Carolina, Ohio, Texas, and Utah</span>, offering guidance rooted in service, trust, and community.
+              <span className="font-bold text-[#B8860B]">We proudly serve clients across California, Arizona, Florida, Illinois, Maine, North Carolina, Ohio, Texas, and Utah</span>, offering guidance rooted in service, trust, and community.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
