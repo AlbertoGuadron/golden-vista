@@ -42,7 +42,7 @@ export default function Footer() {
               <div className="space-y-3">
                 <div className="flex items-center justify-center space-x-3 text-lg">
                   <FaMapMarkerAlt className="text-[#B8860B] text-xl" />
-                  <span className="font-bold">1160 Hamner Ave STE B, CA 92860</span>
+                  <span className="font-bold">1160 Hamner Ave STE B, Norco, CA 92860</span>
                 </div>
               </div>
             </div>

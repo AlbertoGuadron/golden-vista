@@ -353,7 +353,7 @@ export default function ContactUsPage() {
                       <div>
                         <h3 className="text-xl font-black text-[#002F4B] mb-2">Visit Us</h3>
                         <p className="text-[#002F4B]/70 text-lg font-bold">1160 Hamner Ave STE B</p>
-                        <p className="text-[#002F4B]/70 text-lg font-bold">Riverside, CA 92860</p>
+                        <p className="text-[#002F4B]/70 text-lg font-bold">Norco, CA 92860</p>
                       </div>
                     </div>
                   </div>
